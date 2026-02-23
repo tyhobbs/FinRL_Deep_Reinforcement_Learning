@@ -6,14 +6,14 @@ This project integrates **Deep Reinforcement Learning (DRL)** with **LLM-driven 
 
 We benchmark and compare multiple DRL trading agents trained on the **top 30 S&P 500 companies (2020–2025)**, progressively enhancing each model with live market data and NLP-based news sentiment to maximize risk-adjusted returns (Sharpe Ratio).
 
-## Models Compared
+## Model Comparison
 
-| Model | Data Source | Sentiment | Architecture |
-|---|---|---|---|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO |
-| VGG + FinBERT | Yahoo Finance | ✅ NewsAPI + FinBERT | VGG + PPO |
-| VGG + Alpaca + FinBERT | Alpaca (live) | ✅ NewsAPI + FinBERT | VGG + PPO |
-| Transformer + Alpaca + FinBERT | Alpaca (live) | ✅ NewsAPI + FinBERT | Transformer + PPO |
+| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe |
+|-------|-------------|-----------|--------------|--------------|-------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 3.58 | -2.761 |
+| VGG + FinBERT | Yahoo Finance | ✅ NewsAPI + FinBERT | VGG + PPO | 9.15 | -4.63 |
+| VGG + FinBERT + Alpaca | Alpaca (live) | ✅ NewsAPI + FinBERT | VGG + PPO | 5.76 | -7.31 |
+| Transformer + FinBERT + Alpaca | Alpaca (live) | ✅ NewsAPI + FinBERT | Transformer + PPO | In Progress | In Progress |
 
 ## Key Features
 
