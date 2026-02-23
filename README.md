@@ -8,7 +8,7 @@ We benchmark and compare multiple DRL trading agents trained on the **top 30 S&P
 
 ## Model Comparison
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio|
 |-------|-------------|-----------|--------------|--------------|-------------|
 | VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 3.58 | -2.761 |
 | VGG + FinBERT | Yahoo Finance | ✅ NewsAPI + FinBERT | VGG + PPO | 9.15 | -4.63 |
