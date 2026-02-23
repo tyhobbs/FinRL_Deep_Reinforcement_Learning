@@ -83,8 +83,6 @@ ALPACA_SECRET_KEY=your_alpaca_secret_key
 NEWS_API_KEY=your_newsapi_key
 ```
 
-> ⚠️ Never commit your `.env` file. Make sure it's listed in your `.gitignore`.
-
 ### Download the Data
 
 The datasets are available in the `/Data` directory of this repo, or you can re-download them by running:
