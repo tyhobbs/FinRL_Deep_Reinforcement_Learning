@@ -8,11 +8,11 @@ We benchmark and compare multiple DRL trading agents trained on the **top 30 S&P
 
 ## Model Comparison
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio|
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio| Validation Sharpe Ratio|
 |-------|-------------|-----------|--------------|--------------|-------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 3.58 | -2.761 |
-| VGG + FinBERT | Yahoo Finance | ✅ NewsAPI + FinBERT | VGG + PPO | 9.15 | -4.63 |
-| VGG + FinBERT + Alpaca | Alpaca (live) | ✅ NewsAPI + FinBERT | VGG + PPO | 5.76 | -7.31 |
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 2.763 | 3.218 |
+| VGG + FinBERT | Yahoo Finance | ✅ NewsAPI + FinBERT | VGG + PPO | 2.647 | 3.005 |
+| VGG + FinBERT + Alpaca | Alpaca (live) | ✅ NewsAPI + FinBERT | VGG + PPO | 2.663 | 2.037 |
 | Transformer + FinBERT + Alpaca | Alpaca (live) | ✅ NewsAPI + FinBERT | Transformer + PPO | In Progress | In Progress |
 
 ## Key Features
