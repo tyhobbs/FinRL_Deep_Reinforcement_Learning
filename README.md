@@ -23,79 +23,79 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 ### 30-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ### 30-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ---
 
 ### 50-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ### 50-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ### 50-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ---
 
 ### 100-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ### 100-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ### 100-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress |
 
 ---
 
