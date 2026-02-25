@@ -14,12 +14,12 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 ### 30-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio |
-|-------|-------------|-----------|--------------|-------------|------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 2.763 | 3.218 |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | 2.40 | 1.892 |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | 2.81 | 2.78 |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 2.27 | 2.67 |
+| Model | Data Source | Sentiment | Architecture | Training Sharpe Ratio | Validation Sharpe Ratio | Test Return (%) |
+|-------|-------------|-----------|--------------|-------------|------------|------------|
+| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 2.763 | 3.218 | 54.7 |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | 2.40 | 1.892 | 36.88 |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | 2.81 | 2.78 | 39.61 |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 2.27 | 2.67 | 38.60 |
 
 ### 30-Stock Universe — $100,000 Starting Capital
 
