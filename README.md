@@ -46,7 +46,7 @@ To demonstrate that combining transformer-based feature extraction, live market 
 ### Prerequisites
 
 - Python 3.8+
-- A [NewsAPI](https://newsapi.org/) account and API key
+- A [Polygon](https://massive.com/) account and API key
 - An [Alpaca](https://alpaca.markets/) account and API key (for live data)
 
 ### Clone the Repository
@@ -71,7 +71,7 @@ pip install yfinance
 pip install alpaca-trade-api
 pip install transformers  # for FinBERT
 pip install torch
-pip install newsapi-python
+pip install polygon-api-client
 pip install pandas numpy matplotlib
 ```
 
@@ -82,7 +82,7 @@ Create a `.env` file in the root directory and add your API credentials:
 ```env
 ALPACA_API_KEY=your_alpaca_api_key
 ALPACA_SECRET_KEY=your_alpaca_secret_key
-NEWS_API_KEY=your_newsapi_key
+POLYGON_API_KEY=your_polygon_api_key
 ```
 
 ### Download the Data
