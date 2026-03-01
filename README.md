@@ -34,7 +34,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 | VGG Baseline | 3.58 | 65.0% | -2.11% | 758.06% |
 | VGG + FinBERT | 2.40 | 57.82% | 6.01% | 795.88% |
 | VGG + FinBERT + Alpaca | 2.81 | 58.60% | -4.88% | 858.40% |
-| Transformer + FinBERT + Alpaca | 2.27 | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 2.27 | 56.34% | -6.85% | 757.16% |
 
 **Test Metrics**
 
@@ -43,7 +43,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 | VGG Baseline | -2.76 | 30.0% | -6.16% | 54.70% |
 | VGG + FinBERT | 2.91 | 59.38% | -3.79% | 36.88% |
 | VGG + FinBERT + Alpaca | 2.78 | 58.79% | -3.59% | 39.61% |
-| Transformer + FinBERT + Alpaca | 2.67 | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 2.67 | 57.07% | -3.67% | 38.60% |
 
 ---
 
