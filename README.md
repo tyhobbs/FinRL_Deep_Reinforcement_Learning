@@ -10,92 +10,216 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 ---
 
+## Model Reference
+
+| Model | Data Source | Sentiment | Architecture |
+|-------|-------------|-----------|--------------|
+| VGG Baseline | Yahoo Finance | ❌ None | VGG + PPO |
+| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO |
+| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO |
+
+---
+
 ## Results by Universe and Capital Level
+
+---
 
 ### 30-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | 3.58 | -2.76 | 65.0% | 30.0% | -2.11% | -6.16% | 758.06% | 54.70% |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | 2.40 | 2.91 | 57.82% | 59.38% | 6.01% | -3.79% | 795.88% | 36.88% |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | 2.81 | 2.78 | 58.60% | 58.79% | -4.88% | -3.59% | 858.40% | 39.61% |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 2.27 | 2.67 | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | 3.58 | 65.0% | -2.11% | 758.06% |
+| VGG + FinBERT | 2.40 | 57.82% | 6.01% | 795.88% |
+| VGG + FinBERT + Alpaca | 2.81 | 58.60% | -4.88% | 858.40% |
+| Transformer + FinBERT + Alpaca | 2.27 | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | -2.76 | 30.0% | -6.16% | 54.70% |
+| VGG + FinBERT | 2.91 | 59.38% | -3.79% | 36.88% |
+| VGG + FinBERT + Alpaca | 2.78 | 58.79% | -3.59% | 39.61% |
+| Transformer + FinBERT + Alpaca | 2.67 | In Progress | In Progress | In Progress |
+
+---
 
 ### 30-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Val Sharpe | Train Win (%) | Val Win (%) | Train Max DD (%) | Val Max DD (%) | Train Return (%) | Val Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+---
 
 ### 30-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
 
 ---
 
 ### 50-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 3.39 | 2.502 | 59.38 | 57.92 | -6.59% | -10.62% | 5141.14% | 54.46% |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 3.39 | 59.38% | -6.59% | 5141.14% |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 2.502 | 57.92% | -10.62% | 54.46% |
+
+---
 
 ### 50-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 1.22 | 0.90 | 54.18% | 54.74% | -4.02% | -3.90% | 75.14% | 18.20% |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 1.22 | 54.18% | -4.02% | 75.14% |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 0.90 | 54.74% | -3.90% | 18.20% |
+
+---
 
 ### 50-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 0.99 | 2.10 | 52.40% | 55.61% | -5.46% | -4.43% | 97.65% | 52.10% |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 0.99 | 52.40% | -5.46% | 97.65% |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | 2.10 | 55.61% | -4.43% | 52.10% |
 
 ---
 
 ### 100-Stock Universe — $1,000,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+---
 
 ### 100-Stock Universe — $100,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+---
 
 ### 100-Stock Universe — $10,000 Starting Capital
 
-| Model | Data Source | Sentiment | Architecture | Train Sharpe | Test Sharpe | Train Win (%) | Test Win (%) | Train Max DD (%) | Test Max DD (%) | Train Return (%) | Test Return (%) |
-|-------|-------------|-----------|--------------|-------------|------------|--------------|------------|-------------|-----------|-----------------|---------------|
-| VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+**Training Metrics**
+
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
+|-------|-------------|--------------|-----------------|-----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+
+**Test Metrics**
+
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
+|-------|------------|-------------|----------------|----------------|
+| VGG Baseline | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
+| VGG + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | In Progress | In Progress | In Progress | In Progress |
 
 ---
 
