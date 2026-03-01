@@ -103,17 +103,17 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.557
+  Win Rate (%):          57.104%
+  Max Drawdown (%):      -5.846%
+  Total Return (%):      868.151%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.439
+  Win Rate (%):          57.112%
+  Max Drawdown (%):      -4.837%
+  Total Return (%):      18.376%
 
 --------------------------------------------------------------------
 
