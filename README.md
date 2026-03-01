@@ -66,7 +66,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 | VGG Baseline | Yahoo Finance | ❌ | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT | Yahoo Finance | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | VGG + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
-| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress | In Progress |
+| Transformer + FinBERT + Alpaca | Alpaca | ✅ Polygon + FinBERT | Transformer + PPO | 0.99 | 2.10 | 52.40% | 55.61% | -5.46% | -4.43% | 97.65% | 52.10% |
 
 ---
 
