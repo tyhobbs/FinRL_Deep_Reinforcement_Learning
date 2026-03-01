@@ -29,7 +29,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Training Metrics**
 
-| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
 |-------|-------------|--------------|-----------------|-----------------|
 | VGG Baseline | 3.58 | 65.0% | -2.11% | 758.06% |
 | VGG + FinBERT | 2.40 | 57.82% | 6.01% | 795.88% |
@@ -38,7 +38,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Test Metrics**
 
-| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
 |-------|------------|-------------|----------------|----------------|
 | VGG Baseline | -2.76 | 30.0% | -6.16% | 54.70% |
 | VGG + FinBERT | 2.91 | 59.38% | -3.79% | 36.88% |
@@ -51,7 +51,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Training Metrics**
 
-| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
 |-------|-------------|--------------|-----------------|-----------------|
 | VGG Baseline | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
@@ -60,7 +60,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Test Metrics**
 
-| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
 |-------|------------|-------------|----------------|----------------|
 | VGG Baseline | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
@@ -73,7 +73,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Training Metrics**
 
-| Model | Train Sharpe | Train Win (%) | Train Max DD (%) | Train Return (%) |
+| Model | Train Sharpe | Train Win (%) | Train Max Drawdown (%) | Train Return (%) |
 |-------|-------------|--------------|-----------------|-----------------|
 | VGG Baseline | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
@@ -82,7 +82,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 **Test Metrics**
 
-| Model | Test Sharpe | Test Win (%) | Test Max DD (%) | Test Return (%) |
+| Model | Test Sharpe | Test Win (%) | Test Max Drawdown (%) | Test Return (%) |
 |-------|------------|-------------|----------------|----------------|
 | VGG Baseline | In Progress | In Progress | In Progress | In Progress |
 | VGG + FinBERT | In Progress | In Progress | In Progress | In Progress |
