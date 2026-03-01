@@ -23,7 +23,7 @@ We benchmark and compare DRL trading agents trained on up to **100 stocks across
 
 ## Results
 
-Detailed metrics for all completed models are available in [`Results/METRICS.txt`](Results/METRICS.txt).
+Detailed metrics for all completed models are available in [`Metrics/METRICS.txt`](Metrics/METRICS.txt).
 
 ### Status by Universe and Capital Level
 
