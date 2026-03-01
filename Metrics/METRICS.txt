@@ -1,0 +1,682 @@
+====================================================================
+  FINRL MODEL METRICS — DETAILED RESULTS
+  All metrics reported to peak portfolio value unless noted.
+  Training period: 2020-01-01 → 2024-01-01
+  Test period:     2024-01-01 → 2025-01-01
+====================================================================
+
+
+--------------------------------------------------------------------
+  30-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
+--------------------------------------------------------------------
+
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          3.58
+  Win Rate (%):          65.0%
+  Max Drawdown (%):      -2.11%
+  Total Return (%):      758.06%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          -2.76
+  Win Rate (%):          30.0%
+  Max Drawdown (%):      -6.16%
+  Total Return (%):      54.70%
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          2.40
+  Win Rate (%):          57.82%
+  Max Drawdown (%):      6.01%
+  Total Return (%):      795.88%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.91
+  Win Rate (%):          59.38%
+  Max Drawdown (%):      -3.79%
+  Total Return (%):      36.88%
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          2.81
+  Win Rate (%):          58.60%
+  Max Drawdown (%):      -4.88%
+  Total Return (%):      858.40%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.78
+  Win Rate (%):          58.79%
+  Max Drawdown (%):      -3.59%
+  Total Return (%):      39.61%
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          2.27
+  Win Rate (%):          56.34%
+  Max Drawdown (%):      -6.85%
+  Total Return (%):      757.16%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.67
+  Win Rate (%):          57.07%
+  Max Drawdown (%):      -3.67%
+  Total Return (%):      38.60%
+
+--------------------------------------------------------------------
+  30-STOCK UNIVERSE — $100,000 STARTING CAPITAL
+--------------------------------------------------------------------
+
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          2.58
+  Win Rate (%):          57.92%
+  Max Drawdown (%):      -7.51%
+  Total Return (%):      1876.61%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.70
+  Win Rate (%):          57.79%
+  Max Drawdown (%):      -5.44%
+  Total Return (%):      53.23%
+
+--------------------------------------------------------------------
+  30-STOCK UNIVERSE — $10,000 STARTING CAPITAL
+--------------------------------------------------------------------
+
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          2.58
+  Win Rate (%):          57.92%
+  Max Drawdown (%):      -7.51%
+  Total Return (%):      1876.61%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.70
+  Win Rate (%):          57.79%
+  Max Drawdown (%):      -5.44%
+  Total Return (%):      53.23%
+
+
+====================================================================
+  50-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
+====================================================================
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Reward shaping simplified to 4 components:
+               15% concentration limit, Sharpe reward,
+               -10% drawdown penalty, sentiment reward/penalty.
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          3.39
+  Win Rate (%):          59.38%
+  Max Drawdown (%):      -6.59%
+  Total Return (%):      5141.14%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.50
+  Win Rate (%):          57.92%
+  Max Drawdown (%):      -10.62%
+  Total Return (%):      54.46%
+
+====================================================================
+  50-STOCK UNIVERSE — $100,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Reward shaping simplified to 4 components:
+               15% concentration limit, Sharpe reward,
+               -10% drawdown penalty, sentiment reward/penalty.
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          1.22
+  Win Rate (%):          54.18%
+  Max Drawdown (%):      -4.02%
+  Total Return (%):      75.14%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          0.90
+  Win Rate (%):          54.74%
+  Max Drawdown (%):      -3.90%
+  Total Return (%):      18.20%
+
+
+====================================================================
+  50-STOCK UNIVERSE — $10,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Reward shaping simplified to 4 components:
+               15% concentration limit, Sharpe reward,
+               -10% drawdown penalty, sentiment reward/penalty.
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          0.99
+  Win Rate (%):          52.40%
+  Max Drawdown (%):      -5.46%
+  Total Return (%):      97.65%
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          2.10
+  Win Rate (%):          55.61%
+  Max Drawdown (%):      -4.43%
+  Total Return (%):      52.10%
+
+====================================================================
+  100-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
+====================================================================
+MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     None
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Yahoo Finance
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+--------------------------------------------------------------------
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Reward shaping simplified to 4 components:
+               15% concentration limit, Sharpe reward,
+               -10% drawdown penalty, sentiment reward/penalty.
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+====================================================================
+  100-STOCK UNIVERSE — $100,000 STARTING CAPITAL
+====================================================================
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Same architecture as $1M model scaled to $100k.
+               hmax=10 shares per stock.
+               Peak Saved Train Sharpe: 5.815
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+
+====================================================================
+  100-STOCK UNIVERSE — $10,000 STARTING CAPITAL
+====================================================================
+
+MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
+Architecture:  Cross-Stock Transformer + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+Notes:         Same architecture scaled to $10k.
+               hmax=5 shares per stock.
+               Peak Saved Train Sharpe: 5.739 (at episode 970)
+               Training still in progress at time of recording.
+               All metrics reported to peak portfolio value.
+
+  Training Metrics
+  ----------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Test Metrics
+  ------------
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+
+
+====================================================================
+  END OF METRICS FILE
+====================================================================
