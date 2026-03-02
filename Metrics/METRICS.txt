@@ -124,17 +124,17 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.46
+  Win Rate (%):          57.1%
+  Max Drawdown (%):      -5.48%
+  Total Return (%):      787.23%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.7
+  Win Rate (%):          60.0%
+  Max Drawdown (%):      -3.34%
+  Total Return (%):      32.59%
 
 --------------------------------------------------------------------
 
@@ -145,17 +145,17 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.68
+  Win Rate (%):          56.73
+  Max Drawdown (%):      -5.62
+  Total Return (%):      1054.72
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.12
+  Win Rate (%):          58.15
+  Max Drawdown (%):      -3.70
+  Total Return (%):      26.01
 
 --------------------------------------------------------------------
 
