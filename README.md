@@ -52,7 +52,7 @@ Detailed metrics for all completed models are available in [`Metrics/METRICS.txt
 - **RL Algorithm**: Proximal Policy Optimization (PPO) via Stable Baselines 3
 - **Training Improvements**: Linear learning rate schedule, VecNormalize observation normalisation, TrainSharpeSavingCallback peak weight preservation, CheckpointCallback periodic saves
 - **Reward Shaping**: Direct annualised Sharpe reward, drawdown penalty, sentiment alignment reward and penalty, 15% per-stock concentration limit
-- **Evaluation Metrics**: Sharpe Ratio, Win Rate, Maximum Drawdown, Calmar Ratio, Total Return, Peak Return, Volatility
+- **Evaluation Metrics**: Sharpe Ratio, Win Rate, Maximum Drawdown, Total Return
 
 ---
 
