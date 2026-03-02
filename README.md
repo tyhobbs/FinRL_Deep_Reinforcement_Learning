@@ -33,8 +33,8 @@ Detailed metrics for all completed models are available in [`Metrics/METRICS.txt
 | 30-Stock | $100,000 | ✅ Complete | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
 | 30-Stock | $10,000 | ✅ Complete | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
 | 50-Stock | $1,000,000 | ✅ Complete | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
-| 50-Stock | $100,000 | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
-| 50-Stock | $10,000 | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
+| 50-Stock | $100,000 | ✅ Complete | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
+| 50-Stock | $10,000 | ✅ Complete | 🔄 In Progress | 🔄 In Progress | ✅ Complete |
 | 100-Stock | $1,000,000 | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress |
 | 100-Stock | $100,000 | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress |
 | 100-Stock | $10,000 | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress | 🔄 In Progress |
