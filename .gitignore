@@ -1,0 +1,31 @@
+# API Keys 
+.env
+*.env
+
+# Mac system files
+.DS_Store
+__MACOSX/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Large model files 
+*.pkl
+*.zip
+*.pt
+*.pth
+checkpoints_*/
+best_model_*/
+best_train_sharpe_*/
+vec_normalize_*.pkl
+
+# TensorBoard logs
+tensorboard_logs/
+runs/
+
+# Large data files
+*.csv
+Data/*.csv
