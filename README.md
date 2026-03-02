@@ -58,25 +58,64 @@ Detailed metrics for all completed models are available in [`Metrics/METRICS.txt
 
 ## Stock Universes
 
-### 30-Stock Universe (Original)
-`AAPL, MSFT, GOOGL, AMZN, META, TSLA, NVDA, PYPL, ADBE, NFLX, INTC, CSCO, PEP, AVGO, COST, QCOM, CMCSA, TMUS, TXN, AMGN, HON, SBUX, INTU, MDLZ, GILD, ISRG, ADP, BKNG, VRTX, ADI`
+### 30-Stock Universe
+
+30 stocks drawn from NASDAQ-listed technology, healthcare, and consumer companies.
+
+| Sector | Tickers |
+|--------|---------|
+| Technology | AAPL, MSFT, GOOGL, AMZN, META, TSLA, NVDA, PYPL, ADBE, NFLX |
+| Semiconductors | INTC, CSCO, AVGO, QCOM, TXN, ADI |
+| Software / Services | INTU, ADP, BKNG |
+| Consumer Discretionary | PEP, COST, SBUX, MDLZ |
+| Healthcare / Biotech | AMGN, GILD, ISRG, VRTX |
+| Industrials | HON |
+| Communication Services | CMCSA, TMUS |
+
+---
 
 ### 50-Stock Universe
-Core 30 NASDAQ stocks plus:
 
-| Sector | Additions |
-|--------|-----------|
-| Healthcare | JNJ, UNH, PFE, MRK, ABT |
+Core 30-stock universe expanded with 20 additional stocks across underrepresented sectors.
+
+| Sector | Tickers |
+|--------|---------|
+| Technology | AAPL, MSFT, GOOGL, AMZN, META, TSLA, NVDA, PYPL, ADBE, NFLX |
+| Semiconductors | INTC, CSCO, AVGO, QCOM, TXN, ADI |
+| Software / Services | INTU, ADP, BKNG |
+| Consumer Discretionary | PEP, COST, SBUX, MDLZ |
+| Healthcare / Biotech | AMGN, GILD, ISRG, VRTX, JNJ, UNH, PFE, MRK, ABT |
+| Industrials | HON, CAT, GE, RTX |
+| Communication Services | CMCSA, TMUS |
 | Financials | JPM, BAC, GS, MS, BLK |
 | Energy | XOM, CVX, COP |
 | Consumer Staples | WMT, PG, KO, MCD |
-| Industrials / Defence | CAT, GE, RTX |
 | Real Estate / Utilities | AMT, NEE, DUK |
 | Materials | LIN, NEM, FCX |
 | Growth / Emerging Tech | AMD, CRM, SNOW, PLTR |
 
+---
+
 ### 100-Stock Universe
-50-stock universe expanded with additional coverage across all major S&P 500 sectors including energy majors (SLB, EOG, PSX, MPC, VLO), additional financials (WFC, C, AXP, SPGI, CME), biotech (REGN, BIIB, ILMN, IDXX, ALGN, MRNA), communication services (DIS, CHTR, T, VZ), real estate/utilities (PLD, SO), materials (APD, ECL, FCX), and emerging tech (COIN).
+
+Core 50-stock universe expanded with ~50 additional stocks providing full S&P 500 sector coverage.
+
+| Sector | Tickers |
+|--------|---------|
+| Technology | AAPL, MSFT, GOOGL, AMZN, META, TSLA, NVDA, PYPL, ADBE, NFLX |
+| Semiconductors | INTC, CSCO, AVGO, QCOM, TXN, ADI |
+| Software / Services | INTU, ADP, BKNG |
+| Consumer Discretionary | PEP, COST, SBUX, MDLZ |
+| Healthcare / Biotech | AMGN, GILD, ISRG, VRTX, JNJ, UNH, PFE, MRK, ABT |
+| Biotech (expanded) | REGN, BIIB, ILMN, IDXX, ALGN, MRNA |
+| Industrials | HON, CAT, GE, RTX |
+| Communication Services | CMCSA, TMUS, DIS, CHTR, T, VZ |
+| Financials | JPM, BAC, GS, MS, BLK, WFC, C, AXP, SPGI, CME |
+| Energy | XOM, CVX, COP, SLB, EOG, PSX, MPC, VLO |
+| Consumer Staples | WMT, PG, KO, MCD |
+| Real Estate / Utilities | AMT, NEE, DUK, PLD, SO |
+| Materials | LIN, NEM, FCX, APD, ECL |
+| Growth / Emerging Tech | AMD, CRM, SNOW, PLTR, COIN |
 
 ---
 
@@ -181,7 +220,7 @@ FinRL_Deep_Reinforcement_Learning/
 │       ├── VGG_Alpaca_polygon_{1M,100k,10k}.ipynb              # Alpaca + Polygon FinBERT
 │       └── FinRL_transformer_polygon_100stocks.ipynb            # Transformer (Alpaca + Polygon)
 │
-├── Results/
+├── Metrics/
 │   └── METRICS.txt                                      # Detailed metrics for all completed models
 │
 ├── Data/
