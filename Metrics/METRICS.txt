@@ -24,7 +24,7 @@ Sentiment:     None
 
   Test Metrics
   ------------
-  Sharpe Ratio:          -2.76
+  Sharpe Ratio:          2.76
   Win Rate (%):          30.0%
   Max Drawdown (%):      -6.16%
   Total Return (%):      54.70%
