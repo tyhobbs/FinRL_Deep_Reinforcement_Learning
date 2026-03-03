@@ -49,10 +49,10 @@ Detailed metrics for all completed models are available in [Metrics/METRICS.txt]
 
 ### Non-DRL Benchmark
 
-| Benchmark | Universe | Status | Capital Level | Capital Level |
-|-----------|---------|--------|
-| Buy-and-Hold (equal-weight) | 30-Stock | 🔄 In Progress | $1,000,000 |
-| Buy-and-Hold (equal-weight) | 50-Stock | 🔄 In Progress | $1,000,000 |
+| Benchmark | Capital Level | Universe | Status | Capital Level |
+|-----------|---------|--------|--------|--------|
+| Buy-and-Hold (equal-weight) | $1,000,000 | 30-Stock | 🔄 In Progress | 
+| Buy-and-Hold (equal-weight) | $1,000,000 | 50-Stock | 🔄 In Progress | 
 
 ### 100-Stock Universe
 
