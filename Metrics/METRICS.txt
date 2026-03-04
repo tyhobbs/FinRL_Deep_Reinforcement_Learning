@@ -17,18 +17,33 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.58
-  Win Rate (%):          65.0%
-  Max Drawdown (%):      -2.11%
-  Total Return (%):      758.06%
+  Sharpe Ratio:          2.481
+  Win Rate (%):          58.474%
+  Max Drawdown (%):      -4.947%
+  Total Return (%):      732.127%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.76
-  Win Rate (%):          30.0%
-  Max Drawdown (%):      -6.16%
-  Total Return (%):      54.70%
+  Sharpe Ratio:          1.708
+  Win Rate (%):          56.081%
+  Max Drawdown (%):      -5.192%
+  Total Return (%):      48.32%
 
+  Degradation
+  ------------
+  31.20%
+
+  Distribution
+  ------------
+  Buy actions: 340 (4.5%) 
+  Sell actions: 183 (2.4%) 
+  Hold actions: 7,007 (93.1%)	
+
+  Portfolio Value
+  ---------------
+  Start: $1,000,000   
+  End:   $1,396,537   
+  Return: 39.65%					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -38,18 +53,24 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.40
-  Win Rate (%):          57.82%
-  Max Drawdown (%):      6.01%
-  Total Return (%):      795.88%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.91
-  Win Rate (%):          59.38%
-  Max Drawdown (%):      -3.79%
-  Total Return (%):      36.88%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
+  Degradation
+  ------------
+  Distribution
+  ------------
+  Portfolio Value
+  ---------------
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -59,18 +80,24 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.81
-  Win Rate (%):          58.60%
-  Max Drawdown (%):      -4.88%
-  Total Return (%):      858.40%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.78
-  Win Rate (%):          58.79%
-  Max Drawdown (%):      -3.59%
-  Total Return (%):      39.61%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
+  Degradation
+  ------------
+  Distribution
+  ------------
+  Portfolio Value
+  ---------------
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca
@@ -80,17 +107,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.27
-  Win Rate (%):          56.34%
-  Max Drawdown (%):      -6.85%
-  Total Return (%):      757.16%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.67
-  Win Rate (%):          57.07%
-  Max Drawdown (%):      -3.67%
-  Total Return (%):      38.60%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
   30-STOCK UNIVERSE — $100,000 STARTING CAPITAL
@@ -103,17 +139,32 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.557
-  Win Rate (%):          57.104%
-  Max Drawdown (%):      -5.846%
-  Total Return (%):      868.151%
+  Sharpe Ratio:          2.603
+  Win Rate (%):          57.064%
+  Max Drawdown (%):      -5.784%
+  Total Return (%):      1048.701%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.439
-  Win Rate (%):          57.112%
-  Max Drawdown (%):      -4.837%
-  Total Return (%):      18.376%
+  Sharpe Ratio:          2.673
+  Win Rate (%):          57.658%
+  Max Drawdown (%):      -3.695%
+  Total Return (%):      54.347%
+  
+  Degradation
+  ------------
+  -2.70%
+  Distribution
+  ------------
+  Buy  actions: 478 (6.6%)  
+  Sell actions: 478 (6.6%)  
+  Hold actions: 6,274 (86.8%)					
+
+  Portfolio Value
+  ---------------
+  Start: $100,000  
+  End:   $154,347  
+  Return: 54.35%					
 
 --------------------------------------------------------------------
 
@@ -124,17 +175,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.46
-  Win Rate (%):          57.1%
-  Max Drawdown (%):      -5.48%
-  Total Return (%):      787.23%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.7
-  Win Rate (%):          60.0%
-  Max Drawdown (%):      -3.34%
-  Total Return (%):      32.59%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -145,17 +205,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.68
-  Win Rate (%):          56.73
-  Max Drawdown (%):      -5.62
-  Total Return (%):      1054.72
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.12
-  Win Rate (%):          58.15
-  Max Drawdown (%):      -3.70
-  Total Return (%):      26.01
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -166,17 +235,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.58
-  Win Rate (%):          57.92%
-  Max Drawdown (%):      -7.51%
-  Total Return (%):      1876.61%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.70
-  Win Rate (%):          57.79%
-  Max Drawdown (%):      -5.44%
-  Total Return (%):      53.23%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
   30-STOCK UNIVERSE — $10,000 STARTING CAPITAL
@@ -189,17 +267,32 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.159
-  Win Rate (%):          58.225%
-  Max Drawdown (%):      -5.336%
-  Total Return (%):      2040.935%
+  Sharpe Ratio:          3.404
+  Win Rate (%):          59.346%
+  Max Drawdown (%):      -5.477%
+  Total Return (%):      0.404%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.439
-  Win Rate (%):          57.112%
-  Max Drawdown (%):      -4.837%
-  Total Return (%):      1083.758%
+  Sharpe Ratio:          1.461
+  Win Rate (%):          55.622%
+  Max Drawdown (%):      -4.951%
+  Total Return (%):      40.569%
+
+  Degradation
+  ------------
+  57.10%
+  Distribution
+  ------------
+  Buy  actions: 221 (3.1%)  
+  Sell actions: 186 (2.6%)  
+  Hold actions: 6,673 (94.3%)					
+
+  Portfolio Value
+  ---------------
+  Start: $10,000  
+  End:   $14,057  
+  Return: 40.57%					
 
 --------------------------------------------------------------------
 
@@ -210,17 +303,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.05
-  Win Rate (%):          59.12%
-  Max Drawdown (%):      -5.40%
-  Total Return (%):      2144.55%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.423
-  Win Rate (%):          54.98%
-  Max Drawdown (%):      -24.19%
-  Total Return (%):      9.23%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -231,17 +333,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.08
-  Win Rate (%):          59.66%
-  Max Drawdown (%):      -5.46%
-  Total Return (%):      2127.43%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.85
-  Win Rate (%):          55.78%
-  Max Drawdown (%):      -5.83%
-  Total Return (%):      -1.62%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -252,17 +363,26 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.58
-  Win Rate (%):          57.92%
-  Max Drawdown (%):      -7.51%
-  Total Return (%):      1876.61%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.70
-  Win Rate (%):          57.79%
-  Max Drawdown (%):      -5.44%
-  Total Return (%):      53.23%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 
 ====================================================================
@@ -275,17 +395,26 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.893
-  Win Rate (%):          57.596%
-  Max Drawdown (%):      -5.338%
-  Total Return (%):      978.613%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.94
-  Win Rate (%):          53.836%
-  Max Drawdown (%):      -4.81%
-  Total Return (%):      12.75%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -308,6 +437,15 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
+
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -329,6 +467,15 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
+
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
@@ -341,17 +488,26 @@ Notes:         Reward shaping simplified to 4 components:
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.39
-  Win Rate (%):          59.38%
-  Max Drawdown (%):      -6.59%
-  Total Return (%):      5141.14%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.50
-  Win Rate (%):          57.92%
-  Max Drawdown (%):      -10.62%
-  Total Return (%):      54.46%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 ====================================================================
   50-STOCK UNIVERSE — $100,000 STARTING CAPITAL
@@ -364,17 +520,26 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.187
-  Win Rate (%):          56.369%
-  Max Drawdown (%):      -7.639%
-  Total Return (%):      679.174%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.94
-  Win Rate (%):          53.836%
-  Max Drawdown (%):      -4.81%
-  Total Return (%):      1027.497%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -397,6 +562,15 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
+
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -418,6 +592,15 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
+ Degradation
+  ------------ 
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
+
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
@@ -430,17 +613,26 @@ Notes:         Reward shaping simplified to 4 components:
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          1.22
-  Win Rate (%):          54.18%
-  Max Drawdown (%):      -4.02%
-  Total Return (%):      75.14%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.90
-  Win Rate (%):          54.74%
-  Max Drawdown (%):      -3.90%
-  Total Return (%):      18.20%
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 
 ====================================================================
@@ -454,17 +646,26 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.174
-  Win Rate (%):          59.26
-  Max Drawdown (%):      -5.274
-  Total Return (%):      1241.828
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.94
-  Win Rate (%):          53.836
-  Max Drawdown (%):      -4.81
-  Total Return (%):      11.75
+  Sharpe Ratio:          In progress
+  Win Rate (%):          In progress
+  Max Drawdown (%):      In progress
+  Total Return (%):      In progress
+
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -487,6 +688,15 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
+  Degradation
+  ------------
+
+  Distribution
+  ------------
+
+  Portfolio Value
+  ---------------
+
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -508,93 +718,14 @@ Sentiment:     Polygon + FinBERT
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
---------------------------------------------------------------------
-
-MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
-Architecture:  Cross-Stock Transformer + PPO
-Data Source:   Alpaca
-Sentiment:     Polygon + FinBERT
-Notes:         Reward shaping simplified to 4 components:
-               15% concentration limit, Sharpe reward,
-               -10% drawdown penalty, sentiment reward/penalty.
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          0.99
-  Win Rate (%):          52.40%
-  Max Drawdown (%):      -5.46%
-  Total Return (%):      97.65%
-
-  Test Metrics
+  Degradation
   ------------
-  Sharpe Ratio:          2.10
-  Win Rate (%):          55.61%
-  Max Drawdown (%):      -4.43%
-  Total Return (%):      52.10%
 
-====================================================================
-  100-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
-====================================================================
-MODEL: VGG Baseline (Yahoo Finance, No Sentiment)
-Architecture:  VGG + PPO
-Data Source:   Yahoo Finance
-Sentiment:     None
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-  Test Metrics
+  Distribution
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
 
---------------------------------------------------------------------
-
-MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
-Architecture:  VGG + PPO
-Data Source:   Yahoo Finance
-Sentiment:     Polygon + FinBERT
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-  Test Metrics
-  ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
---------------------------------------------------------------------
-
-MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
-Architecture:  VGG + PPO
-Data Source:   Alpaca
-Sentiment:     Polygon + FinBERT
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-  Test Metrics
-  ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Portfolio Value
+  ---------------
 
 --------------------------------------------------------------------
 
@@ -620,62 +751,14 @@ Notes:         Reward shaping simplified to 4 components:
   Max Drawdown (%):      In progress
   Total Return (%):      In progress
 
-====================================================================
-  100-STOCK UNIVERSE — $100,000 STARTING CAPITAL
-====================================================================
+  Degradation
+  ------------ 
 
-MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
-Architecture:  Cross-Stock Transformer + PPO
-Data Source:   Alpaca
-Sentiment:     Polygon + FinBERT
-Notes:         Same architecture as $1M model scaled to $100k.
-               hmax=10 shares per stock.
-               Peak Saved Train Sharpe: 5.815
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-  Test Metrics
+  Distribution
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
 
-
-====================================================================
-  100-STOCK UNIVERSE — $10,000 STARTING CAPITAL
-====================================================================
-
-MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
-Architecture:  Cross-Stock Transformer + PPO
-Data Source:   Alpaca
-Sentiment:     Polygon + FinBERT
-Notes:         Same architecture scaled to $10k.
-               hmax=5 shares per stock.
-               Peak Saved Train Sharpe: 5.739 (at episode 970)
-               Training still in progress at time of recording.
-               All metrics reported to peak portfolio value.
-
-  Training Metrics
-  ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-  Test Metrics
-  ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
-
-
+  Portfolio Value
+  ---------------
 
 ====================================================================
   END OF METRICS FILE
