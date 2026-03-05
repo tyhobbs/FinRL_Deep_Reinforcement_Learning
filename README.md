@@ -207,7 +207,7 @@ POLYGON_API_KEY=your_polygon_api_key
 
 Historical price data is fetched automatically when running each notebook - via Yahoo Finance for baseline models and via Alpaca API for all other models. Polygon.io sentiment data is fetched and cached locally after the first run, so subsequent executions load from cache instantly.
 
----
+```
 
 ## Repository Structure
 
@@ -235,7 +235,7 @@ FinRL_Deep_Reinforcement_Learning/
 |   +-- Reference papers
 |
 +-- README.md
----
+```
 
 ## Future Work
 
