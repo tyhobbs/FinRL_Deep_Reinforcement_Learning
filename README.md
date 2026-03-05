@@ -54,10 +54,6 @@ Detailed metrics for all completed models are available in [Metrics/METRICS.txt]
 | Buy-and-Hold (equal-weight) | $1,000,000 | 30-Stock | 🔄 In Progress | 
 | Buy-and-Hold (equal-weight) | $1,000,000 | 50-Stock | 🔄 In Progress | 
 
-### 100-Stock Universe
-
-**Future Work** - The 100-stock universe spanning all major S&P 500 sectors is planned as a future extension. Scaling the Cross-Stock Transformer to 100 stocks will allow evaluation of cross-stock attention mechanisms at institutional scale. Results from the 30 and 50-stock universes establish the performance baseline for this future comparison.
-
 ---
 
 ## Key Features
