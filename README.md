@@ -173,18 +173,21 @@ To demonstrate that combining cross-stock transformer architecture, live market 
 - An [Alpaca](https://alpaca.markets/) account and API key (for Alpaca-based models)
 
 ### Clone the Repository
-```bash
+```
+bash
 git clone https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning.git
 cd FinRL_Deep_Reinforcement_Learning
 ```
 
 ### Install Dependencies
-```bash
+```
+bash
 pip install -r requirements.txt
 ```
 
 Or install the core packages manually:
-```bash
+```
+bash
 pip install finrl
 pip install stable-baselines3
 pip install yfinance
@@ -197,20 +200,21 @@ pip install pandas numpy matplotlib plotly
 ```
 
 ### Configure API Keys
-
+```
 Create a `.env` file in the root directory and add your API credentials:
 ALPACA_API_KEY=your_alpaca_api_key
 ALPACA_SECRET_KEY=your_alpaca_secret_key
 POLYGON_API_KEY=your_polygon_api_key
+```
 
 ### Download the Data
 
 Historical price data is fetched automatically when running each notebook - via Yahoo Finance for baseline models and via Alpaca API for all other models. Polygon.io sentiment data is fetched and cached locally after the first run, so subsequent executions load from cache instantly.
 
-```
+
 
 ## Repository Structure
-
+```
 FinRL_Deep_Reinforcement_Learning/
 |-- Code/
 |   |-- 30-Stock Universe
