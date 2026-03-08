@@ -17,33 +17,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.481
-  Win Rate (%):          58.474%
-  Max Drawdown (%):      -4.947%
-  Total Return (%):      732.127%
+  Sharpe Ratio:          2.044
+  Win Rate (%):          58.51%
+  Max Drawdown (%):      -23.64%
+  Total Return (%):      732.37%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.708
-  Win Rate (%):          56.081%
-  Max Drawdown (%):      -5.192%
-  Total Return (%):      48.32%
+  Sharpe Ratio:          3.086
+  Win Rate (%):          59.9%
+  Max Drawdown (%):      -5.0%
+  Total Return (%):      48.22%
 
   Degradation
   ------------
-  31.20%
+  -51.00%	
 
   Distribution
   ------------
-  Buy actions: 340 (4.5%) 
-  Sell actions: 183 (2.4%) 
-  Hold actions: 7,007 (93.1%)	
+  Buy:  386  (6.5%)
+  Sell: 229  (3.9%) 
+  Hold: 5,325  (89.6%)						
 
-  Portfolio Value
+  Cash holding days
   ---------------
-  Start: $1,000,000   
-  End:   $1,396,537   
-  Return: 39.65%					
+  72/198 (36.4%)										
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -53,24 +51,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.816
+  Win Rate (%):          55.92%
+  Max Drawdown (%):      -22.72%
+  Total Return (%):      852.58%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.349
+  Win Rate (%):          55.74%
+  Max Drawdown (%):      -10.84%
+  Total Return (%):      49.02%
 
   Degradation
   ------------
+  -29.40%	
+  
   Distribution
   ------------
-  Portfolio Value
+  Buy:  272  (3.8%)  
+  Sell: 148  (2.1%)  
+  Hold: 6,660  (94.1%)					
+  
+  Cash holding days
   ---------------
+  138/236 (58.5%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -80,24 +85,30 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.777
+  Win Rate (%):          56.82%
+  Max Drawdown (%):      -22.36%
+  Total Return (%):      757.62%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.57
+  Win Rate (%):          55.79%
+  Max Drawdown (%):      -12.52%
+  Total Return (%):      31.41%
 
   Degradation
   ------------
+  11.6%	
+  
   Distribution
   ------------
-  Portfolio Value
+  Buy:  267  (3.8%)  
+  Sell: 167  (2.4%)  
+  Hold: 6,586  (93.8%)					
+  Cash holding days
   ---------------
+  120/234 (51.3%)					
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca
@@ -125,7 +136,7 @@ Sentiment:     Polygon + FinBERT
   Distribution
   ------------
 
-  Portfolio Value
+  Cash holding days
   ---------------
 
 --------------------------------------------------------------------
@@ -139,33 +150,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.603
-  Win Rate (%):          57.064%
-  Max Drawdown (%):      -5.784%
-  Total Return (%):      1048.701%
+  Sharpe Ratio:          1.687
+  Win Rate (%):          57.01%
+  Max Drawdown (%):      -22.78%
+  Total Return (%):      752.28%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          2.673
-  Win Rate (%):          57.658%
-  Max Drawdown (%):      -3.695%
-  Total Return (%):      54.347%
-  
+  Sharpe Ratio:          2.287
+  Win Rate (%):          55.37%
+  Max Drawdown (%):      -19.86%
+  Total Return (%):      55.37%
+
   Degradation
   ------------
-  -2.70%
+  -35.60%	
+  
   Distribution
   ------------
-  Buy  actions: 478 (6.6%)  
-  Sell actions: 478 (6.6%)  
-  Hold actions: 6,274 (86.8%)					
-
-  Portfolio Value
-  ---------------
-  Start: $100,000  
-  End:   $154,347  
-  Return: 54.35%					
-
+  Buy:  445  (6.1%)  
+  Sell: 391  (5.4%)  
+  Hold: 6,454  (88.5%)					
+  
+  Cash holding days
+  ---------------					
+  49/243 (20.2%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -175,33 +184,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.56
-  Win Rate (%):          58.10%
-  Max Drawdown (%):      -5.31%
-  Total Return (%):      754.87%
+  Sharpe Ratio:          1.773
+  Win Rate (%):          57.41%
+  Max Drawdown (%):      -23.36%
+  Total Return (%):      713.61%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          3.16
-  Win Rate (%):          56.12%
-  Max Drawdown (%):      -3.49%
-  Total Return (%):      44.28%
+  Sharpe Ratio:          2.35
+  Win Rate (%):          58.82%
+  Max Drawdown (%):      -8.95%
+  Total Return (%):      48.92%
 
   Degradation
   ------------
-  -23.40%
+  -32.5%	
+  
   Distribution
   ------------
-  Buy  actions: 582 (7.7%)  
-  Sell actions: 607 (8.1%)  
-  Hold actions: 6,341 (84.2%)	
-
-  Portfolio Value
-  ---------------
-  Start: $100,000  
-  End:   $144,277  
-  Return: 44.28%					
-
+  Buy:  691  (9.6%)  
+  Sell: 697  (9.7%)  
+  Hold: 5,782  (80.6%)					
+  
+  Cash holding days
+  ---------------					
+  3/239 (1.3%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -211,27 +218,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.029
+  Win Rate (%):          58.01%
+  Max Drawdown (%):      -20.53%
+  Total Return (%):      818.37%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.531
+  Win Rate (%):          56.17%
+  Max Drawdown (%):      -9.5%
+  Total Return (%):      57.16%
 
   Degradation
   ------------
-
+  -24.7%	
+  
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  382  (5.4%)  
+  Sell: 327  (4.6%)  
+  Hold: 6,371  (90.0%)					
+  
+  Cash holding days
   ---------------
-
+  66/236 (28.0%)					
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca
@@ -259,7 +270,7 @@ Sentiment:     Polygon + FinBERT
   Distribution
   ------------
 
-  Portfolio Value
+  Cash holding days
   ---------------
 
 --------------------------------------------------------------------
@@ -273,33 +284,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          3.404
-  Win Rate (%):          59.346%
-  Max Drawdown (%):      -5.477%
-  Total Return (%):      0.404%
+  Sharpe Ratio:          2.428
+  Win Rate (%):          58.51%
+  Max Drawdown (%):      -32.65%
+  Total Return (%):      1853.69%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.461
-  Win Rate (%):          55.622%
-  Max Drawdown (%):      -4.951%
-  Total Return (%):      40.569%
+  Sharpe Ratio:          3.111
+  Win Rate (%):          56.02%
+  Max Drawdown (%):      -11.27%
+  Total Return (%):      98.7%
 
   Degradation
   ------------
-  57.10%
+  -28.10%	
+  
   Distribution
   ------------
-  Buy  actions: 221 (3.1%)  
-  Sell actions: 186 (2.6%)  
-  Hold actions: 6,673 (94.3%)					
-
-  Portfolio Value
-  ---------------
-  Start: $10,000  
-  End:   $14,057  
-  Return: 40.57%					
-
+  Buy:  326  (4.5%)  
+  Sell: 287  (4.0%)  
+  Hold: 6,647  (91.6%)					
+  
+  Cash holding days
+  ---------------					
+  71/242 (29.3%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -309,32 +318,30 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.72
-  Win Rate (%):          57.16%
-  Max Drawdown (%):      -6.31%
-  Total Return (%):      2217.42%
+  Sharpe Ratio:         2.325 
+  Win Rate (%):         59.2 
+  Max Drawdown (%):     -35.45 
+  Total Return (%):     2366.55 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.25
-  Win Rate (%):          53.99%
-  Max Drawdown (%):      -7.65%
-  Total Return (%):      29.45%
+  Sharpe Ratio:         1.338 
+  Win Rate (%):         50.62 
+  Max Drawdown (%):     -19.24 
+  Total Return (%):     41.07 
 
   Degradation
   ------------
-  54.0%
+  42.50%	
+  
   Distribution
   ------------
-  Buy  actions: 222 (2.9%)  
-  Sell actions: 185 (2.5%)  
-  Hold actions: 7,123 (94.6%)		
-
-  Portfolio Value
+  Buy:  235  (3.2%)  
+  Sell: 219  (3.0%)  Hold: 6,806  (93.7%)
+					
+  Cash holding days
   ---------------
-  Start: $10,000  
-  End:   $12,945  
-  Return: 29.45%					
+  94/242 (38.8%)										
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -344,27 +351,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:        2.166  
+  Win Rate (%):        59.3  
+  Max Drawdown (%):    -37.98  
+  Total Return (%):    2036.15  
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:        2.111  
+  Win Rate (%):        56.85  
+  Max Drawdown (%):    -20.21  
+  Total Return (%):    123.85  
 
   Degradation
   ------------
+  2.50%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  174  (2.4%)  
+  Sell: 156  (2.1%)  
+  Hold: 6,930  (95.5%)	
+				
+  Cash holding days
   ---------------
-
+  122/242 (50.4%)					
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca
@@ -392,7 +403,7 @@ Sentiment:     Polygon + FinBERT
   Distribution
   ------------
 
-  Portfolio Value
+  Cash holding days
   ---------------
 
 
@@ -406,27 +417,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:    	1.713      
+  Win Rate (%):    	58.51%      
+  Max Drawdown (%):     -28.92% 
+  Total Return (%):     658.24% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:        0.872  
+  Win Rate (%):        52.97%  
+  Max Drawdown (%):    -11.95%  
+  Total Return (%):    19.55%  
 
   Degradation
   ------------
+  49.10%	
 
   Distribution
   ------------
+  Buy:  365  (3.5%)  
+  Sell: 218  (2.1%)  
+  Hold: 9,977  (94.5%)					
 
-  Portfolio Value
+  Cash holding days
   ---------------
-
+  107/220 (48.6%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -436,27 +451,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         1.895 
+  Win Rate (%):         58.11% 
+  Max Drawdown (%):     -30.12% 
+  Total Return (%):     811.46% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         0.992 
+  Win Rate (%):         56.02% 
+  Max Drawdown (%):     -18.31% 
+  Total Return (%):     25.42% 
 
   Degradation
   ------------
+  47.7%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  599  (5.2%)  
+  Sell: 466  (4.0%)  
+  Hold: 10,551  (90.8%)	
+				
+  Cash holding days
   ---------------
-
+  79/242 (32.6%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -466,27 +485,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         1.613 
+  Win Rate (%):         57.11% 
+  Max Drawdown (%):     -26.1% 
+  Total Return (%):     579.09% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         1.009 
+  Win Rate (%):         54.39% 
+  Max Drawdown (%):     -10.99% 
+  Total Return (%):     23.94% 
 
   Degradation
   ------------
+  37.4%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  468  (4.1%)  
+  Sell: 329  (2.9%)  
+  Hold: 10,723  (93.1%)	
+				
+  Cash holding days
   ---------------
-
+  95/240 (39.6%)					
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
@@ -499,27 +522,31 @@ Notes:         Reward shaping simplified to 4 components:
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.47
+  Win Rate (%):          54.73%
+  Max Drawdown (%):      -28.89%
+  Total Return (%):      523.47%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.861
+  Win Rate (%):          54.89%
+  Max Drawdown (%):      -11.27%
+  Total Return (%):      38.26%
 
   Degradation
   ------------
+  -26.6%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  5,918  (50.2%)  
+  Sell: 5,543  (47.0%)  
+  Hold: 339  (2.9%)
+					
+  Cash holding days
   ---------------
-
+  0/236 (0.0%)					
 ====================================================================
   50-STOCK UNIVERSE — $100,000 STARTING CAPITAL
 ====================================================================
@@ -531,27 +558,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.923
+  Win Rate (%):          58.51%
+  Max Drawdown (%):      -31.75%
+  Total Return (%):      781.12%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          0.826
+  Win Rate (%):          54.34%
+  Max Drawdown (%):      -11.98%
+  Total Return (%):      19.08%
 
   Degradation
   ------------
-
+  57.0%
+	
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  348  (3.3%)
+  Sell: 250  (2.4%)
+  Hold: 9,962  (94.3%)		
+			
+  Cash holding days
   ---------------
-
+  86/220 (39.1%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -561,27 +592,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.709
+  Win Rate (%):          56.82%
+  Max Drawdown (%):      -27.63%
+  Total Return (%):      832.06%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.347
+  Win Rate (%):          55.76%
+  Max Drawdown (%):      -7.02%
+  Total Return (%):      42.47%
 
   Degradation
   ------------
+  -37.30%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  673  (6.4%) 
+  Sell: 652  (6.2%)  
+  Hold: 9,139  (87.3%)	
+				
+  Cash holding days
   ---------------
-
+  6/218 (2.8%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -591,32 +626,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.47
-  Win Rate (%):          57.43%
-  Max Drawdown (%):      -6.15%
-  Total Return (%):      780.88%
+  Sharpe Ratio:         1.708 
+  Win Rate (%):         57.61% 
+  Max Drawdown (%):     -28.42% 
+  Total Return (%):     780.88% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          1.79
-  Win Rate (%):          55.91%
-  Max Drawdown (%):      -5.84%
-  Total Return (%):      52.60%
+  Sharpe Ratio:        2.019  
+  Win Rate (%):        56.2%  
+  Max Drawdown (%):    -15.28%  
+  Total Return (%):    72.48%  
 
   Degradation
   ------------ 
-  27.50%
+  -18.2%	
+
   Distribution
   ------------
-  Buy  actions: 619 (5.1%)  
-  Sell actions: 496 (4.1%)  
-  Hold actions: 10,933 (90.7%)
+  Buy:  604  (5.2%)
+  Sell: 482  (4.1%)  
+  Hold: 10,578  (90.7%)					
 
-  Portfolio Value
+  Cash holding days
   ---------------
-  Start: $100,000  
-  End:   $152,601  
-  Return: 52.60%					
+  53/243 (21.8%)										
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
@@ -647,7 +681,7 @@ Notes:         Reward shaping simplified to 4 components:
   Distribution
   ------------
 
-  Portfolio Value
+  Cash holding days
   ---------------
 
 
@@ -662,27 +696,31 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         1.999 
+  Win Rate (%):         58.3% 
+  Max Drawdown (%):     -33.49% 
+  Total Return (%):     811.27% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:         1.504 
+  Win Rate (%):         58.53% 
+  Max Drawdown (%):     -10.33% 
+  Total Return (%):     30.98% 
 
   Degradation
   ------------
+  24.80%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  208  (2.0%)  
+  Sell: 168  (1.6%)  
+  Hold: 10,088  (96.4%)	
+				
+  Cash holding days
   ---------------
-
+  121/218 (55.5%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT (Yahoo Finance + Polygon Sentiment)
@@ -692,27 +730,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:       1.805    
+  Win Rate (%):       58.61%   
+  Max Drawdown (%):   -35.04%   
+  Total Return (%):   638.54%   
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:       1.695   
+  Win Rate (%):       56.45%   
+  Max Drawdown (%):   -21.66%   
+  Total Return (%):   68.48%   
 
   Degradation
   ------------
+  6.10%	
 
   Distribution
   ------------
-
-  Portfolio Value
+  Buy:  269  (2.3%)  
+  Sell: 257  (2.2%)  
+  Hold: 11,426  (95.6%)		
+			
+  Cash holding days
   ---------------
-
+  112/249 (45.0%)					
 --------------------------------------------------------------------
 
 MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
@@ -722,32 +764,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          2.39
-  Win Rate (%):          55.45%
-  Max Drawdown (%):      -5.75%
-  Total Return (%):      533.0%
+  Sharpe Ratio:          2.137
+  Win Rate (%):          56.42%
+  Max Drawdown (%):      -35.93%
+  Total Return (%):      1706.93%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.82
-  Win Rate (%):          49.7%
-  Max Drawdown (%):      -4.3%
-  Total Return (%):      19.23%
+  Sharpe Ratio:          2.726%
+  Win Rate (%):          65.79%
+  Max Drawdown (%):      -3.71%
+  Total Return (%):      9.51%
 
   Degradation
   ------------
-  65.7%
+  -27.6%	
+
   Distribution
   ------------
-  Buy  actions: 168 (1.4%)  
-  Sell actions: 146 (1.2%)  
-  Hold actions: 11,734 (97.4%)	
+  Buy:  19  (1.0%)  
+  Sell: 13  (0.7%)  
+  Hold: 1,840  (98.3%)						
 
-  Portfolio Value
+  Cash holding days
   ---------------
-  Start: $10,000  
-  End:   $11,923  
-  Return: 19.23%					
+  19/39 (48.7%)										
 --------------------------------------------------------------------
 
 MODEL: Transformer + FinBERT + Alpaca (Simplified — 4 Components)
@@ -778,7 +819,7 @@ Notes:         Reward shaping simplified to 4 components:
   Distribution
   ------------
 
-  Portfolio Value
+  Cash holding days
   ---------------
 
 ====================================================================
