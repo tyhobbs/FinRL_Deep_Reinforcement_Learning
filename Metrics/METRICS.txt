@@ -663,27 +663,31 @@ Notes:         Reward shaping simplified to 4 components:
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.718
+  Win Rate (%):          56.72%
+  Max Drawdown (%):      -26.64%
+  Total Return (%):      1015.22%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.895
+  Win Rate (%):          55.04%
+  Max Drawdown (%):      -19.62%
+  Total Return (%):      52.93%
 
   Degradation
   ------------
+  -10.3%	
 
   Distribution
   ------------
+  Buy:  4,896  (41.0%)
+  Sell: 6,759  (56.6%)
+  Hold: 295  (2.5%)			
 
   Cash holding days
   ---------------
-
+  0/239 (0.0%)					
 
 ====================================================================
   50-STOCK UNIVERSE — $10,000 STARTING CAPITAL
@@ -801,27 +805,30 @@ Notes:         Reward shaping simplified to 4 components:
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          2.253
+  Win Rate (%):          57.91%
+  Max Drawdown (%):      -31.7%
+  Total Return (%):      2715.91%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.806
+  Win Rate (%):          48.61%
+  Max Drawdown (%):      -8.89%
+  Total Return (%):      33.99%
 
   Degradation
   ------------ 
-
+  19.8%	
   Distribution
   ------------
+  Buy:  4,475  (41.2%)
+  Sell: 6,093  (56.2%)
+  Hold: 282  (2.6%)		
 
   Cash holding days
   ---------------
-
+  0/217 (0.0%)					
 ====================================================================
   END OF METRICS FILE
 ====================================================================
