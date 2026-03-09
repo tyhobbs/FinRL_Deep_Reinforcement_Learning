@@ -216,6 +216,11 @@ Historical price data is fetched automatically when running each notebook - via 
 ## Repository Structure
 ```
 FinRL_Deep_Reinforcement_Learning/
+|
+|--Environment/
+|   |--requirements.txt
+|   |--utils.py
+|
 |-- Code/
 |   |-- 30-Stock Universe
 |   |   |-- testFinRL.ipynb
