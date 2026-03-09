@@ -44,8 +44,8 @@ Detailed metrics for all completed models are available in [Metrics/METRICS.txt]
 | 30-Stock | $100,000 | ✅ Complete | ✅ Complete  | ✅ Complete   | 🔄 In Progress | 
 | 30-Stock | $10,000 | ✅ Complete | ✅ Complete | ✅ Complete  | 🔄 In Progress |
 | 50-Stock | $1,000,000 | ✅ Complete  | ✅ Complete  | ✅ Complete  | ✅ Complete  | 
-| 50-Stock | $100,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | 🔄 In Progress | 
-| 50-Stock | $10,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | 🔄 In Progress | 
+| 50-Stock | $100,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | ✅ Complete  | 
+| 50-Stock | $10,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | ✅ Complete  | 
 
 ### Non-DRL Benchmark
 
