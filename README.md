@@ -40,19 +40,19 @@ Detailed metrics for all completed models are available in [Metrics/METRICS.txt]
 
 | Universe | Capital | VGG Baseline | VGG + FinBERT | VGG + Alpaca | Transformer |
 |----------|---------|-------------|--------------|-------------|-------------|
-| 30-Stock | $1,000,000 | ✅ Complete | ✅ Complete | ✅ Complete  | 🔄 In Progress | 
-| 30-Stock | $100,000 | ✅ Complete | ✅ Complete  | ✅ Complete   | 🔄 In Progress | 
-| 30-Stock | $10,000 | ✅ Complete | ✅ Complete | ✅ Complete  | 🔄 In Progress |
+| 30-Stock | $1,000,000 | ✅ Complete | ✅ Complete | ✅ Complete  | ✅ Complete | 
+| 30-Stock | $100,000 | ✅ Complete | ✅ Complete  | ✅ Complete   | ✅ Complete | 
+| 30-Stock | $10,000 | ✅ Complete | ✅ Complete | ✅ Complete  | ✅ Complete |
 | 50-Stock | $1,000,000 | ✅ Complete  | ✅ Complete  | ✅ Complete  | ✅ Complete  | 
 | 50-Stock | $100,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | ✅ Complete  | 
 | 50-Stock | $10,000 | ✅ Complete  | ✅ Complete  | ✅ Complete | ✅ Complete  | 
 
 ### Non-DRL Benchmark
 
-| Benchmark | Capital Level | Universe | Status |
-|-----------|---------|--------|--------|
-| Buy-and-Hold (equal-weight) | $1,000,000 | 30-Stock | 🔄 In Progress | 
-| Buy-and-Hold (equal-weight) | $1,000,000 | 50-Stock | 🔄 In Progress | 
+| Benchmark | Universe | Status |
+|-----------|--------|--------|
+| Buy-and-Hold (equal-weight) | 30-Stock | ✅ Complete | 
+| Buy-and-Hold (equal-weight) | 50-Stock | ✅ Complete | 
 
 ---
 
