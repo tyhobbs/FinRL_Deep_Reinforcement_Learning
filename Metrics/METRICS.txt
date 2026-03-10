@@ -118,27 +118,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.498
+  Win Rate (%):          54.83%
+  Max Drawdown (%):      -28.96%
+  Total Return (%):      773.57%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.748
+  Win Rate (%):          57.87%
+  Max Drawdown (%):      -19.7%
+  Total Return (%):      55.23%
 
   Degradation
   ------------
+  -16.7%	
 
   Distribution
   ------------
+  Buy:  3,727  (52.6%) 
+  Sell: 3,194  (45.1%) 
+  Hold: 159  (2.2%)		
 
   Cash holding days
   ---------------
-
+  0/236 (0.0%)					
 --------------------------------------------------------------------
   30-STOCK UNIVERSE — $100,000 STARTING CAPITAL
 --------------------------------------------------------------------
@@ -252,27 +256,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.538
+  Win Rate (%):          56.12%
+  Max Drawdown (%):      -29.01%
+  Total Return (%):      793.42%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.468
+  Win Rate (%):          52.94%
+  Max Drawdown (%):      -11.93%
+  Total Return (%):      25.91%
 
   Degradation
   ------------
+  4.6%	
 
   Distribution
   ------------
+  Buy:  3,507  (48.9%) 
+  Sell: 3,470  (48.4%)  
+  Hold: 193  (2.7%)				
 
   Cash holding days
   ---------------
-
+  0/239 (0.0%)					
 --------------------------------------------------------------------
   30-STOCK UNIVERSE — $10,000 STARTING CAPITAL
 --------------------------------------------------------------------
@@ -385,27 +393,31 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          1.46
+  Win Rate (%):          53.03%
+  Max Drawdown (%):      -55.49%
+  Total Return (%):      1190.7%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          In progress
-  Win Rate (%):          In progress
-  Max Drawdown (%):      In progress
-  Total Return (%):      In progress
+  Sharpe Ratio:          0.629
+  Win Rate (%):          53.24%
+  Max Drawdown (%):      -12.14%
+  Total Return (%):      13.31%
 
   Degradation
   ------------
+  56.9%	
 
   Distribution
   ------------
+  Buy:  2,597  (39.9%)  
+  Sell: 3,754  (57.7%)  
+  Hold: 159  (2.4%)		
 
   Cash holding days
   ---------------
-
+  0/217 (0.0%)					
 
 ====================================================================
   50-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
@@ -417,21 +429,21 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:    	1.713      
-  Win Rate (%):    	58.51%      
-  Max Drawdown (%):     -28.92% 
-  Total Return (%):     658.24% 
+  Sharpe Ratio:    	1.922     
+  Win Rate (%):    	57.71%      
+  Max Drawdown (%):     -16.22% 
+  Total Return (%):     560.3% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:        0.872  
-  Win Rate (%):        52.97%  
-  Max Drawdown (%):    -11.95%  
-  Total Return (%):    19.55%  
+  Sharpe Ratio:        1.001  
+  Win Rate (%):        55.71%  
+  Max Drawdown (%):    -9.33%  
+  Total Return (%):    20.97%  
 
   Degradation
   ------------
-  49.10%	
+  47.90%		
 
   Distribution
   ------------
@@ -451,21 +463,21 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:         1.895 
-  Win Rate (%):         58.11% 
-  Max Drawdown (%):     -30.12% 
-  Total Return (%):     811.46% 
+  Sharpe Ratio:         1.965 
+  Win Rate (%):         57.91% 
+  Max Drawdown (%):     -19.83% 
+  Total Return (%):     562.57% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:         0.992 
-  Win Rate (%):         56.02% 
-  Max Drawdown (%):     -18.31% 
-  Total Return (%):     25.42% 
+  Sharpe Ratio:         1.273 
+  Win Rate (%):         56.16% 
+  Max Drawdown (%):     -8.42% 
+  Total Return (%):     23.61% 
 
   Degradation
   ------------
-  47.7%	
+  35.2		
 
   Distribution
   ------------
@@ -485,21 +497,21 @@ Sentiment:     Polygon + FinBERT
 
   Training Metrics
   ----------------
-  Sharpe Ratio:         1.613 
-  Win Rate (%):         57.11% 
-  Max Drawdown (%):     -26.1% 
-  Total Return (%):     579.09% 
+  Sharpe Ratio:         2.138 
+  Win Rate (%):         58.31% 
+  Max Drawdown (%):     -14.94% 
+  Total Return (%):     601.41% 
 
   Test Metrics
   ------------
-  Sharpe Ratio:         1.009 
-  Win Rate (%):         54.39% 
-  Max Drawdown (%):     -10.99% 
-  Total Return (%):     23.94% 
+  Sharpe Ratio:         1.575 
+  Win Rate (%):         57.56% 
+  Max Drawdown (%):     -7.78% 
+  Total Return (%):     29.96% 
 
   Degradation
   ------------
-  37.4%	
+  26.3	
 
   Distribution
   ------------
@@ -558,21 +570,21 @@ Sentiment:     None
 
   Training Metrics
   ----------------
-  Sharpe Ratio:          1.923
-  Win Rate (%):          58.51%
-  Max Drawdown (%):      -31.75%
-  Total Return (%):      781.12%
+  Sharpe Ratio:          1.168
+  Win Rate (%):          56.72%
+  Max Drawdown (%):      -31.9%
+  Total Return (%):      380.18%
 
   Test Metrics
   ------------
-  Sharpe Ratio:          0.826
-  Win Rate (%):          54.34%
-  Max Drawdown (%):      -11.98%
-  Total Return (%):      19.08%
+  Sharpe Ratio:          1.381
+  Win Rate (%):          54.96%
+  Max Drawdown (%):      -10.75%
+  Total Return (%):      32.11%
 
   Degradation
   ------------
-  57.0%
+  -18.2	
 	
   Distribution
   ------------
@@ -828,7 +840,188 @@ Notes:         Reward shaping simplified to 4 components:
 
   Cash holding days
   ---------------
-  0/217 (0.0%)					
+  0/217 (0.0%)		
+
+====================================================================
+  Hold out Metrics: 30-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.975
+  Win Rate (%):          57.37%
+  Max Drawdown (%):      -10.82%
+  Total Return (%):      39.34%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  30_Stock_1M_VGG_Alpaca                     Sharpe:  2.266  Return:   19.71%  MaxDD:  -10.68%  WinRate:  56.9%
+  Buy-and-Hold                               Sharpe:  3.411  Return:   26.23%  MaxDD:   -5.79%  WinRate:  56.1%
+
+  H2 2024 — Volatile (Jul-Dec):
+  30_Stock_1M_VGG_Alpaca                     Sharpe:  1.056  Return:   10.41%  MaxDD:  -12.52%  WinRate:  55.0%
+  Buy-and-Hold                               Sharpe:  0.911  Return:    9.98%  MaxDD:  -10.82%  WinRate:  58.3%
+
+  Full Period (Jan 2024 - Jan 2025):
+  30_Stock_1M_VGG_Alpaca                     Sharpe:  1.570  Return:   31.41%  MaxDD:  -12.52%  WinRate:  55.8%
+  Buy-and-Hold                               Sharpe:  1.975  Return:   39.34%  MaxDD:  -10.82%  WinRate:  57.4%
+
+====================================================================
+ Hold out Metrics: 30-STOCK UNIVERSE — $100,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.975
+  Win Rate (%):          57.37%
+  Max Drawdown (%):      -10.82%
+  Total Return (%):      39.34%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  30_Stock_100k_VGG_Alpaca                   Sharpe:  3.343  Return:   34.27%  MaxDD:   -7.76%  WinRate:  59.3%
+  Buy-and-Hold                               Sharpe:  3.411  Return:   26.23%  MaxDD:   -5.79%  WinRate:  56.1%
+
+  H2 2024 — Volatile (Jul-Dec):
+  30_Stock_100k_VGG_Alpaca                   Sharpe:  1.776  Return:   17.49%  MaxDD:   -9.50%  WinRate:  53.2%
+  Buy-and-Hold                               Sharpe:  0.911  Return:    9.98%  MaxDD:  -10.82%  WinRate:  58.3%
+
+  Full Period (Jan 2024 - Jan 2025):
+  30_Stock_100k_VGG_Alpaca                   Sharpe:  2.531  Return:   57.16%  MaxDD:   -9.50%  WinRate:  56.2%
+  Buy-and-Hold                               Sharpe:  1.975  Return:   39.34%  MaxDD:  -10.82%  WinRate:  57.4%
+
+====================================================================
+ Hold out Metrics: 30-STOCK UNIVERSE — $10,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.975
+  Win Rate (%):          57.37%
+  Max Drawdown (%):      -10.82%
+  Total Return (%):      39.34%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  30_Stock_10k_VGG_Alpaca                    Sharpe:  2.812  Return:   55.39%  MaxDD:  -15.99%  WinRate:  56.9%
+  Buy-and-Hold                               Sharpe:  3.411  Return:   26.23%  MaxDD:   -5.79%  WinRate:  56.1%
+
+  H2 2024 — Volatile (Jul-Dec):
+  30_Stock_10k_VGG_Alpaca                    Sharpe:  1.658  Return:   42.06%  MaxDD:  -18.65%  WinRate:  56.4%
+  Buy-and-Hold                               Sharpe:  0.911  Return:    9.98%  MaxDD:  -10.82%  WinRate:  58.3%
+
+  Full Period (Jan 2024 - Jan 2025):
+  30_Stock_10k_VGG_Alpaca                    Sharpe:  2.111  Return:  123.85%  MaxDD:  -20.21%  WinRate:  56.8%
+  Buy-and-Hold                               Sharpe:  1.975  Return:   39.34%  MaxDD:  -10.82%  WinRate:  57.4%
+
+====================================================================
+ Hold out Metrics: 50-STOCK UNIVERSE — $1,000,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.437
+  Win Rate (%):          56.97%
+  Max Drawdown (%):      -7.8%
+  Total Return (%):      25.53%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  50_Stock_1M_VGG_Alpaca                     Sharpe:  1.018  Return:    9.87%  MaxDD:   -7.06%  WinRate:  51.2%
+  Buy-and-Hold                               Sharpe:  2.138  Return:   14.57%  MaxDD:   -4.76%  WinRate:  56.9%
+
+  H2 2024 — Volatile (Jul-Dec):
+  50_Stock_1M_VGG_Alpaca                     Sharpe:  2.183  Return:   18.33%  MaxDD:   -7.78%  WinRate:  64.9%
+  Buy-and-Hold                               Sharpe:  0.948  Return:    9.45%  MaxDD:   -7.80%  WinRate:  56.7%
+
+  Full Period (Jan 2024 - Jan 2025):
+  50_Stock_1M_VGG_Alpaca                     Sharpe:  1.575  Return:   29.96%  MaxDD:   -7.78%  WinRate:  57.6%
+  Buy-and-Hold                               Sharpe:  1.437  Return:   25.53%  MaxDD:   -7.80%  WinRate:  57.0%
+
+====================================================================
+ Hold out Metrics: 50-STOCK UNIVERSE — $100,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.437
+  Win Rate (%):          56.97%
+  Max Drawdown (%):      -7.8%
+  Total Return (%):      25.53%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  50_Stock_100k_VGG_Alpaca                   Sharpe:  0.685  Return:    7.76%  MaxDD:   -9.61%  WinRate:  54.5%
+  Buy-and-Hold                               Sharpe:  2.137  Return:   14.57%  MaxDD:   -4.76%  WinRate:  56.9%
+
+  H2 2024 — Volatile (Jul-Dec):
+  50_Stock_100k_VGG_Alpaca                   Sharpe:  2.816  Return:   57.97%  MaxDD:  -15.28%  WinRate:  57.6%
+  Buy-and-Hold                               Sharpe:  0.948  Return:    9.45%  MaxDD:   -7.80%  WinRate:  56.7%
+
+  Full Period (Jan 2024 - Jan 2025):
+  50_Stock_100k_VGG_Alpaca                   Sharpe:  2.019  Return:   72.48%  MaxDD:  -15.28%  WinRate:  56.2%
+  Buy-and-Hold                               Sharpe:  1.437  Return:   25.53%  MaxDD:   -7.80%  WinRate:  57.0%
+
+====================================================================
+ Hold out Metrics: 50-STOCK UNIVERSE — $10,000 STARTING CAPITAL
+====================================================================
+
+MODEL: VGG + FinBERT + Alpaca (Alpaca + Polygon Sentiment)
+Architecture:  VGG + PPO
+Data Source:   Alpaca
+Sentiment:     Polygon + FinBERT
+
+  Buy-hold-metrics
+  ----------------
+  Sharpe Ratio:          1.437
+  Win Rate (%):          56.97%
+  Max Drawdown (%):      -7.8%
+  Total Return (%):      25.53%
+
+  Market Regime Analysis
+  ----------------------
+  H1 2024 — Bull Market (Jan-Jun):
+  50_Stock_10k_VGG_Alpaca                    Sharpe:  2.726  Return:    9.51%  MaxDD:   -3.71%  WinRate:  65.8%
+  Buy-and-Hold                               Sharpe:  2.138  Return:   14.57%  MaxDD:   -4.76%  WinRate:  56.9%
+
+  H2 2024 — Volatile (Jul-Dec):
+  50_Stock_10k_VGG_Alpaca                    No data for this period (model peaked before period start)
+  Buy-and-Hold                               Sharpe:  0.948  Return:    9.45%  MaxDD:   -7.80%  WinRate:  56.7%
+
+  Full Period (Jan 2024 - Jan 2025):
+  50_Stock_10k_VGG_Alpaca                    Sharpe:  2.726  Return:    9.51%  MaxDD:   -3.71%  WinRate:  65.8%
+  Buy-and-Hold                               Sharpe:  1.437  Return:   25.53%  MaxDD:   -7.80%  WinRate:  57.0%
+
 ====================================================================
   END OF METRICS FILE
 ====================================================================
