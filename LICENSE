@@ -1,0 +1,78 @@
+MIT License
+
+Copyright (c) 2025 Tyler Hobbs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Third-Party Licenses
+--------------------
+
+This project builds on the following open-source libraries:
+
+FinRL (AI4Finance Foundation)
+  License: MIT
+  Source:  https://github.com/AI4Finance-Foundation/FinRL
+
+Stable Baselines 3 (DLR-RM)
+  License: MIT
+  Source:  https://github.com/DLR-RM/stable-baselines3
+
+FinBERT (ProsusAI)
+  License: Apache 2.0
+  Source:  https://huggingface.co/ProsusAI/finbert
+
+PyTorch
+  License: BSD 3-Clause
+  Source:  https://github.com/pytorch/pytorch
+
+Polygon.io API
+  Usage subject to Polygon.io Terms of Service
+  Source:  https://polygon.io/terms
+
+Alpaca Markets API
+  Usage subject to Alpaca Terms of Service
+  Source:  https://alpaca.markets/terms-and-conditions
+
+---
+
+Research and Academic Use
+--------------------------
+
+This project was developed as part of academic research at the
+University of Virginia. If you use this code or results in your
+own research, please cite:
+
+  Hobbs, T. (2025). FinRL: Deep Reinforcement Learning for
+  Automated Stock Trading with Sentiment Analysis.
+  University of Virginia.
+  https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning
+
+---
+
+Disclaimer
+----------
+
+This software is provided for research and educational purposes only.
+Nothing in this repository constitutes financial advice. Trading
+financial instruments involves substantial risk of loss. Past
+performance demonstrated in backtesting does not guarantee future
+results. The authors are not responsible for any financial losses
+incurred through the use of this software.
