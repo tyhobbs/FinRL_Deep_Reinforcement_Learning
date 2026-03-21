@@ -8,7 +8,7 @@
 This project integrates **Deep Reinforcement Learning (DRL)** with **LLM-driven sentiment analysis** to build an automated stock trading system using the [FinRL](https://github.com/AI4Finance-Foundation/FinRL) framework. Models are benchmarked across multiple architectures, data sources, stock universes, and starting capital levels to evaluate both institutional and retail-scale performance.
 
 ---
-
+[![Visitors](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning.svg?label=Visitors&color=blue)](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/)
 ## Overview
 
 We benchmark and compare DRL trading agents trained on **30 and 50 stocks across 9 sectors (2020-2025)**, progressively enhancing each model with live market data, NLP-based news sentiment, an expanded stock universe, and realistic capital constraints. Each variable is changed independently to isolate its contribution, forming a proper ablation study across architecture, data source, sentiment quality, universe size, and capital level.
@@ -317,8 +317,16 @@ FinRL_Deep_Reinforcement_Learning/
 
 ## Future Work
 
--- **Hyperparameter search**: Systematic grid search over PPO hyperparameters and reward component weights to improve Transformer performance at smaller capital levels
-- **100-Stock Universe**: Extend the Cross-Stock Transformer to a 100-stock universe spanning all major S&P 500 sectors, evaluating cross-stock attention mechanisms at institutional scale
-- **Live deployment**: Implement a kill-switch trading system for live Alpaca paper trading with drawdown-based stop conditions
-- **Walk-forward validation**: Extend evaluation using rolling train/test windows to test generalization across different market regimes
-- **Additional DRL algorithms**: Compare PPO against SAC and TD3 on the same universe and reward structure
+- **Live deployment**: A kill-switch paper trading system is currently
+  live on Alpaca (deployed March 16, 2026) with intraday stop-loss
+  protection, automated daily execution, and end-of-day portfolio
+  logging via the 30-Stock VGG + Alpaca \$100k model (test Sharpe
+  2.531). Minimum 63-day validation period targeting comparison
+  against backtested risk-adjusted returns.
+
+- **Open-source package**: The core components developed in this
+  work — the four-component reward function, Cross-Stock Transformer
+  architecture, VGG feature extractor, TrainSharpeSavingCallback,
+  and evaluation framework — will be extracted and published as a
+  standalone Python package on PyPI, providing a clean reproducible
+  interface for DRL-based trading research.
