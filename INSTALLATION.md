@@ -60,10 +60,10 @@ Notebooks are organized by universe and architecture under `Code/`:
 ```
 Code/
 ├── 30-Stock Universe/
-│   ├── testFinRL_30stocks_{1M,100k,10k}.ipynb   ← VGG Baseline
-│   ├── testFinRLwithNewsFetch_polygon_30stocks_{1M,100k,10k}.ipynb     ← VGG + FinBERT
-│   ├── FinRL_Alpaca_polygon_30stocks_{1M,100k,10k}.ipynb ← VGG + Alpaca
-│   └── FinRL_transformer_polygon_{1M,100k,10k}.ipynb          ← Transformer
+│   ├── testFinRL_30stocks_{1M,100k,10k}.ipynb   
+│   ├── testFinRLwithNewsFetch_polygon_30stocks_{1M,100k,10k}.ipynb     
+│   ├── FinRL_Alpaca_polygon_30stocks_{1M,100k,10k}.ipynb 
+│   └── FinRL_transformer_polygon_{1M,100k,10k}.ipynb          
 └── 50-Stock Universe/
     ├── BaselineVGG_50stocks_{1M,100k,10k}.ipynb
     ├── VGG_yfinance_polygon_50stocks_{1M,100k,10k}.ipynb
