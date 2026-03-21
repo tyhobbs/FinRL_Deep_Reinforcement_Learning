@@ -4,7 +4,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/tyhobbs/FinRL_Deep_Reinforcement_Learning?color=orange)](https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/releases/tag/v1.0.0)
-[![GitHub Stars](https://img.shields.io/github/stars/tyhobbs/FinRL_Deep_Reinforcement_Learning?style=social)](https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/stargazers)
 [![Visitors](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning.svg?label=Visitors&color=blue)](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/)
 
 This project integrates **Deep Reinforcement Learning (DRL)** with **LLM-driven sentiment analysis** to build an automated stock trading system using the [FinRL](https://github.com/AI4Finance-Foundation/FinRL) framework. Models are benchmarked across multiple architectures, data sources, stock universes, and starting capital levels to evaluate both institutional and retail-scale performance.
