@@ -27,7 +27,7 @@ Each model changes exactly one variable relative to the previous, allowing clean
 
 ## Key Findings
 
-- **18 of 24 models beat buy-and-hold** on a risk-adjusted basis
+- **16 of 24 models beat buy-and-hold** on a risk-adjusted basis
 - **$100k is the optimal capital level** — highest average test Sharpe (2.035) across all architectures
 - **VGG + Alpaca outperforms the Transformer** (avg Sharpe 2.089 vs 1.568) — local convolutional feature extraction is more data-efficient than global attention for daily trading
 - **30-stock universe outperforms 50-stock** on average (Sharpe 1.987 vs 1.629)
