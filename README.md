@@ -91,6 +91,7 @@ FinRL_Deep_Reinforcement_Learning/
 | [docs/DATASET.md](docs/DATASET.md) | Data sources, indicators, sentiment pipeline, observation space |
 | [docs/UNIVERSES.md](docs/UNIVERSES.md) | Full ticker lists for 30-stock and 50-stock universes |
 | [INSTALLATION.md](INSTALLATION.md) | Setup, API keys, hardware requirements, paper trading |
+| [docs/trading_system_overview.pdf](docs/trading_system_overview.pdf) | System overview diagram |
 
 ---
 
