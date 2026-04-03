@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/tyhobbs/FinRL_Deep_Reinforcement_Learning?color=orange)](https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/releases/tag/v1.0.0)
 [![Visitors](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning.svg?label=Visitors&color=blue)](https://hits.sh/github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/)
+[![Live Dashboard](https://img.shields.io/badge/Live-Trading_Dashboard-00d68f?logo=render)](https://finrl-dashboard.onrender.com/)
 
 This project integrates **Deep Reinforcement Learning (DRL)** with **LLM-driven sentiment analysis** to build an automated stock trading system using the [FinRL](https://github.com/AI4Finance-Foundation/FinRL) framework. Models are benchmarked across multiple architectures, data sources, stock universes, and starting capital levels to evaluate both institutional and retail-scale performance.
 
@@ -92,6 +93,7 @@ FinRL_Deep_Reinforcement_Learning/
 | [docs/UNIVERSES.md](docs/UNIVERSES.md) | Full ticker lists for 30-stock and 50-stock universes |
 | [INSTALLATION.md](INSTALLATION.md) | Setup, API keys, hardware requirements, paper trading |
 | [docs/trading_system_overview.pdf](docs/trading_system_overview.pdf) | System overview diagram |
+| [Live Trading Dashboard](https://finrl-dashboard.onrender.com/) | Real-time paper trading monitor — 3 parallel accounts |
 
 ---
 
