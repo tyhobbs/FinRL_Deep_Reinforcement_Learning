@@ -75,10 +75,17 @@ FinRL_Deep_Reinforcement_Learning/
 ├── Code/
 │   ├── 30-Stock Universe/   ← 4 architectures × 3 capital levels
 │   └── 50-Stock Universe/   ← 4 architectures × 3 capital levels
-├── Metrics/                 ← METRICS.txt
-├── Data/                    ← Training and validation CSVs
+├── Metrics/
+│   ├── METRICS.txt                                     ← Full 24-model ablation metrics
+│   ├── Multi_seed Metrics.txt                          ← Multi-seed summary results
+│   ├── multi_seed_full_metrics_30stocks_100k.csv       ← Full per-seed metric breakdown
+│   └── MultiSeed_Results_Collector_30stocks_100k.ipynb ← Multi-seed results notebook
+├── Data/
+│   ├── 30-Stock/            ← Training and validation CSVs
+│   ├── 50-Stock/            ← Training and validation CSVs
+│   └── MultiSeed/           ← Multi-seed run outputs
 ├── Literature Paper/        ← Reference papers
-└── docs/                    ← GitHub Pages dashboard + RESULTS.md
+└── docs/                    ← GitHub Pages dashboard, RESULTS.md, ARCHITECTURE.md, and other relavant figures
 ```
 
 ---
