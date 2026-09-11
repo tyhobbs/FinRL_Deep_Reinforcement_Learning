@@ -22,7 +22,7 @@ cd FinRL_Deep_Reinforcement_Learning
 ## Install Dependencies
 
 ```bash
-pip install -r Environment/requirements.txt
+pip install -r Code/Environment/requirements.txt
 ```
 
 Or install core packages manually:
@@ -59,12 +59,12 @@ Notebooks are organized by universe and architecture under `Code/`:
 
 ```
 Code/
-├── 30-Stock Universe/
+├── 30 Stock Universe/
 │   ├── testFinRL_30stocks_{1M,100k,10k}.ipynb   
 │   ├── testFinRLwithNewsFetch_polygon_30stocks_{1M,100k,10k}.ipynb     
 │   ├── FinRL_Alpaca_polygon_30stocks_{1M,100k,10k}.ipynb 
 │   └── FinRL_transformer_polygon_{1M,100k,10k}.ipynb          
-└── 50-Stock Universe/
+└── 50 Stock Universe/
     ├── BaselineVGG_50stocks_{1M,100k,10k}.ipynb
     ├── VGG_yfinance_polygon_50stocks_{1M,100k,10k}.ipynb
     ├── VGG_Alpaca_polygon_50stocks_{1M,100k,10k}.ipynb
@@ -77,7 +77,9 @@ Run each notebook top to bottom. Sentiment data is fetched and cached locally on
 
 ## Paper Trading Setup
 
-To run the live paper trading pipeline:
+> The paper-trading deployment was shut down in June 2026 after the universe-size sweep found no model that reliably beat buy-and-hold (see [docs/RESULTS.md](docs/RESULTS.md)). These steps document how it was run.
+
+To run the paper trading pipeline:
 
 1. Ensure you have a paper trading account on Alpaca with $100,000 starting balance
 2. Save the trained VGG + Alpaca model and ticker list:
