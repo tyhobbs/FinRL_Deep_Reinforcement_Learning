@@ -1,4 +1,14 @@
 ====================================================================
+  NOTE (added after the universe-size sweep)
+  Test metrics in this file were computed up to each model's peak
+  portfolio value, while buy-and-hold was measured over the full year.
+  They overstate performance and are not valid out-of-sample
+  comparisons. The "Full Period" regime blocks below were also computed
+  on the truncated series. See docs/RESULTS.md for the full-period,
+  multi-seed results.
+====================================================================
+
+====================================================================
   FINRL MODEL METRICS — DETAILED RESULTS
   All metrics reported to peak portfolio value unless noted.
   Training period: 2020-01-01 → 2024-01-01
