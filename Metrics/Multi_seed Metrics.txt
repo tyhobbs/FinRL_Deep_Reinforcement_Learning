@@ -1,4 +1,11 @@
 ================================================================================
+NOTE (added after the universe-size sweep)
+These metrics were computed up to each run's peak portfolio value ("to peak")
+and overstate performance. They are useful for comparing variation across seeds,
+not for comparison with full-year buy-and-hold. See docs/RESULTS.md.
+================================================================================
+
+================================================================================
 MULTI-SEED RESULTS — Test Period 2024 (to peak) — 30-Stock $100k
 ================================================================================
 
