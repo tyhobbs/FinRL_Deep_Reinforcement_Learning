@@ -116,15 +116,19 @@ R_t = R_sharpe + R_sentiment − P_drawdown − P_concentration
 
 ---
 
-## Why VGG Outperforms the Transformer
+## VGG vs. Transformer
 
-Contrary to the initial hypothesis, the Cross-Stock Transformer underperforms VGG on this dataset (avg Sharpe 1.568 vs 2.089). Several factors likely contribute:
+In the original ablation and the three-seed architecture check, the Cross-Stock Transformer had a lower Sharpe than the VGG variants, and its always-buy policy appeared in all three seeds. Both of those evaluations used a peak-truncated test window. The later full-period sweep also showed that seed-to-seed variation in this system is large, so this is not a reliable architecture ranking. See [RESULTS.md](RESULTS.md) for details.
 
-1. **Data efficiency**: 4 years of daily trading data (~1,000 trading days) is insufficient for a transformer to learn robust global attention patterns. VGG's local convolutional inductive bias requires less data to converge.
+If the gap is real, plausible contributing factors include:
 
-2. **Sequence length**: A 10-day lookback window may be too short for temporal attention to capture meaningful patterns beyond what the 8 technical indicators already encode.
+1. **Data efficiency**: 4 years of daily trading data (~1,000 trading days) may be insufficient for a transformer to learn robust global attention patterns. VGG's local convolutional inductive bias typically needs less data to converge.
 
-3. **Training instability**: Transformer models exhibit higher variance during training and an early negative Sharpe spike that VGG models do not show, suggesting the attention mechanism struggles with the initial random policy phase of PPO.
+2. **Sequence length**: A 10-day lookback window may be too short for temporal attention to capture patterns beyond what the 8 technical indicators already encode.
+
+3. **Training instability**: Transformer runs showed higher variance during training and an early negative Sharpe spike that VGG runs did not, suggesting the attention mechanism may struggle with the initial random-policy phase of PPO.
+
+These are hypotheses and were not tested directly.
 
 ---
 
