@@ -673,6 +673,26 @@
       .ms-verdict-grid { grid-template-columns: 1fr; }
       .ms-findings-grid { grid-template-columns: 1fr; }
     }
+    /* ── Corrections ── */
+    .notice {
+      border: 1px solid var(--accent2);
+      background: rgba(255,107,53,.08);
+      border-radius: 6px;
+      padding: 18px 22px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--text);
+      margin: 32px 0 8px;
+    }
+    .notice strong { color: var(--accent2); }
+    .caveat {
+      font-size: 12px;
+      color: var(--accent2);
+      margin: -16px 0 24px;
+      line-height: 1.6;
+    }
+    .results-table.ablation th:last-child,
+    .results-table.ablation td:last-child { display: none; }
   </style>
 </head>
 <body>
@@ -680,10 +700,10 @@
 <!-- ── Hero ── -->
 <div class="hero">
   <div class="hero-tag">// FinRL · Deep Reinforcement Learning · 2020–2025</div>
-  <h1>DRL Stock Trading<br><span>Ablation Study</span></h1>
+  <h1>DRL Stock Trading<br><span>Results &amp; Corrections</span></h1>
   <p class="hero-sub">
-    24 models across 2 stock universes, 4 architectures, and 3 capital levels.
-    Training period 2020–2024 · Test period 2024–2025 · Risk-free rate 5% annualised.
+    Under multi-seed, full-period evaluation, no configuration reliably beat equal-weight buy-and-hold.
+    Training period 2020–2024 · Test period 2024–2025.
   </p>
   <div class="hero-pills">
     <div class="pill"><span class="dot" style="background:var(--accent1)"></span>PPO + Stable Baselines 3</div>
@@ -697,63 +717,154 @@
 <!-- ── Top stats ── -->
 <div class="stats-bar">
   <div class="stat-cell">
-    <div class="stat-label">Best Test Sharpe</div>
-    <div class="stat-value cyan">3.111</div>
-    <div class="stat-sub">30-Stock VGG Baseline · $10k</div>
+    <div class="stat-label">Universe Sizes Beating B&amp;H (mean)</div>
+    <div class="stat-value orange">0 / 5</div>
+    <div class="stat-sub">Full test year · 30 to 50 stocks</div>
   </div>
   <div class="stat-cell">
-    <div class="stat-label">Models Beating Buy-and-Hold</div>
-    <div class="stat-value green">16 / 24</div>
-    <div class="stat-sub">67% of all configurations</div>
+    <div class="stat-label">Runs Beating B&amp;H</div>
+    <div class="stat-value orange">6 / 17</div>
+    <div class="stat-sub">Sharpe, per run, same window as benchmark</div>
   </div>
   <div class="stat-cell">
-    <div class="stat-label">Best Test Return (to peak)</div>
-    <div class="stat-value orange">123.85%</div>
-    <div class="stat-sub">30-Stock VGG + Alpaca · $10k</div>
+    <div class="stat-label">Within-Size Seed Spread</div>
+    <div class="stat-value cyan">up to 2.0</div>
+    <div class="stat-sub">Sharpe points (N=35: 0.08 to 2.07)</div>
   </div>
   <div class="stat-cell">
-    <div class="stat-label">Best Capital Level (avg Sharpe)</div>
-    <div class="stat-value cyan">$100k</div>
-    <div class="stat-sub">Avg Sharpe 2.035 across all architectures</div>
+    <div class="stat-label">Spread Across Size Means</div>
+    <div class="stat-value cyan">0.85</div>
+    <div class="stat-sub">Seed variance exceeds design variance</div>
   </div>
 </div>
 
 <!-- ── Main content ── -->
 <div class="main">
 
+  <div class="notice">
+    <strong>Correction.</strong> Sections 01–07 below come from the original exploratory ablation and a three-seed follow-up.
+    Their test metrics were computed only up to each model's peak portfolio value, while buy-and-hold was measured over the
+    full year, so they overstate performance and are not valid out-of-sample comparisons. The universe-size sweep in
+    Section 00 uses full-period, per-run metrics and is the project's result.
+    Details: <a href="https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning/blob/main/docs/RESULTS.md" style="color:var(--accent1)">docs/RESULTS.md</a>.
+  </div>
+
+  <!-- Universe-size sweep -->
+  <div class="section-header">
+    <span class="section-num">00</span>
+    <h2>Result — Universe-Size Sweep (Full Test Year)</h2>
+  </div>
+
+  <table class="results-table">
+    <thead>
+      <tr>
+        <th>Universe</th>
+        <th>Runs</th>
+        <th>Sharpe (mean ± std)</th>
+        <th>B&amp;H Sharpe</th>
+        <th>Gap</th>
+        <th>Runs Beating B&amp;H</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="model-name">30 stocks</div><div class="model-sub">VGG + PPO · Alpaca · FinBERT</div></td>
+        <td class="num">3</td>
+        <td class="num">0.679 ± 0.965</td>
+        <td class="num num-muted">1.540</td>
+        <td class="num num-warn">−0.861</td>
+        <td class="num">1 / 3</td>
+      </tr>
+      <tr>
+        <td><div class="model-name">35 stocks</div><div class="model-sub">VGG + PPO · Alpaca · FinBERT</div></td>
+        <td class="num">5</td>
+        <td class="num">1.348 ± 0.820</td>
+        <td class="num num-muted">1.642</td>
+        <td class="num num-warn">−0.294</td>
+        <td class="num">3 / 5</td>
+      </tr>
+      <tr>
+        <td><div class="model-name">40 stocks</div><div class="model-sub">VGG + PPO · Alpaca · FinBERT</div></td>
+        <td class="num">3</td>
+        <td class="num">1.525 ± 0.400</td>
+        <td class="num num-muted">1.678</td>
+        <td class="num num-warn">−0.153</td>
+        <td class="num">1 / 3</td>
+      </tr>
+      <tr>
+        <td><div class="model-name">45 stocks</div><div class="model-sub">VGG + PPO · Alpaca · FinBERT</div></td>
+        <td class="num">3</td>
+        <td class="num">1.236 ± 0.201</td>
+        <td class="num num-muted">1.710</td>
+        <td class="num num-warn">−0.474</td>
+        <td class="num">0 / 3</td>
+      </tr>
+      <tr>
+        <td><div class="model-name">50 stocks</div><div class="model-sub">VGG + PPO · Alpaca · FinBERT</div></td>
+        <td class="num">3</td>
+        <td class="num">1.329 ± 0.348</td>
+        <td class="num num-muted">1.668</td>
+        <td class="num num-warn">−0.339</td>
+        <td class="num">1 / 3</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="findings-grid">
+    <div class="finding-card">
+      <div class="finding-num">01</div>
+      <div class="finding-title">No Universe Size Beats Buy-and-Hold</div>
+      <div class="finding-body">
+        Every size's mean Sharpe falls below its own equal-weight benchmark, and only 6 of 17 runs clear it.
+        The benchmark also had shallower average drawdowns.
+      </div>
+    </div>
+    <div class="finding-card">
+      <div class="finding-num">02</div>
+      <div class="finding-title">The Seed Is the Dominant Variable</div>
+      <div class="finding-body">
+        Seeds within one size span up to 2.0 Sharpe points, while the means across sizes span 0.85.
+        Universe size between 30 and 50 stocks is within seed noise.
+      </div>
+    </div>
+    <div class="finding-card">
+      <div class="finding-num">03</div>
+      <div class="finding-title">A Promising Edge Dissolved</div>
+      <div class="finding-body">
+        After three seeds, N=35 averaged 1.89 against a 1.64 benchmark. Two more seeds (0.08 and 0.98)
+        brought the mean to 1.35 ± 0.82, below buy-and-hold.
+      </div>
+    </div>
+  </div>
+
+
   <!-- Key Findings -->
   <div class="section-header">
     <span class="section-num">01</span>
-    <h2>Key Findings</h2>
+    <h2>Original Ablation Findings — Withdrawn</h2>
   </div>
 
   <div class="findings-grid">
     <div class="finding-card">
       <div class="finding-num">01</div>
-      <div class="finding-title">Capital Constraint Dominates Architecture</div>
+      <div class="finding-title">"$100k Is the Optimal Capital Level"</div>
       <div class="finding-body">
-        $100k models achieved the highest average test Sharpe (2.035) across all architectures,
-        outperforming both $1M (1.716) and $10k (1.865). Forcing selectivity through capital
-        constraints produces cleaner risk-adjusted returns than architectural complexity alone.
+        Based on single-seed, peak-truncated metrics. Not supported once seed variance and the full test window are accounted for.
       </div>
     </div>
     <div class="finding-card">
       <div class="finding-num">02</div>
-      <div class="finding-title">Transformer Underperforms VGG</div>
+      <div class="finding-title">"Transformer Underperforms VGG"</div>
       <div class="finding-body">
-        Contrary to the initial hypothesis, the Cross-Stock Transformer achieved a mean test
-        Sharpe of 1.568 versus 2.089 for VGG + Alpaca. Local convolutional feature extraction
-        is a more data-efficient inductive bias than global attention for daily trading with
-        4 years of historical data.
+        The Transformer scored lower in both early evaluations and showed an always-buy policy across seeds, but both used
+        the peak-truncated window. Treat this as a hypothesis, not a ranking.
       </div>
     </div>
     <div class="finding-card">
       <div class="finding-num">03</div>
-      <div class="finding-title">30-Stock Universe Outperforms 50-Stock</div>
+      <div class="finding-title">"30-Stock Outperforms 50-Stock"</div>
       <div class="finding-body">
-        Every 30-stock model outperforms its 50-stock counterpart on average Sharpe (2.048
-        vs 1.757). A focused universe gives the CNN a cleaner learning signal with less
-        cross-stock noise to contend with.
+        The full-period sweep across 30 to 50 stocks found universe size to be within seed noise.
       </div>
     </div>
   </div>
@@ -763,6 +874,8 @@
     <span class="section-num">02</span>
     <h2>Architecture Comparison — Avg Test Sharpe</h2>
   </div>
+
+  <p class="caveat">Peak-truncated test metrics, single seed — exploratory, not out-of-sample. See the correction above.</p>
 
   <div class="arch-grid">
     <div class="arch-card">
@@ -837,14 +950,16 @@
     <h2>Full Results — All 24 Models</h2>
   </div>
 
-  <table class="results-table">
+  <p class="caveat">Peak-truncated test metrics, single seed — exploratory, not out-of-sample. See the correction above.</p>
+
+  <table class="results-table ablation">
     <thead>
       <tr>
         <th>Model</th>
         <th>Universe</th>
         <th>Capital</th>
-        <th>Test Sharpe</th>
-        <th>Test Return</th>
+        <th>Test Sharpe (to peak)</th>
+        <th>Test Return (to peak)</th>
         <th>Max DD</th>
         <th>Win Rate</th>
         <th>Train Sharpe</th>
@@ -1150,6 +1265,8 @@
     <h2>Test Performance Over Time (2024)</h2>
   </div>
 
+  <p class="caveat">Peak-truncated test metrics, single seed — exploratory, not out-of-sample. See the correction above.</p>
+
   <div class="chart-grid">
     <div class="chart-panel">
       <h3>Test / Total Return %</h3>
@@ -1175,10 +1292,12 @@
     <h2>Market Regime Analysis — VGG + Alpaca Best Configuration</h2>
   </div>
 
+  <p class="caveat">Peak-truncated test metrics, single seed — exploratory, not out-of-sample. See the correction above.</p>
+
   <div class="regime-grid">
     <div class="regime-card">
       <div class="regime-card-header">
-        <h4>30-Stock · $100k <span class="badge badge-green" style="margin-left:8px">Best Overall</span></h4>
+        <h4>30-Stock · $100k </h4>
         <span class="badge badge-cyan">Sharpe 2.531</span>
       </div>
       <table class="regime-table">
@@ -1356,7 +1475,7 @@
   </div>
 
   <p style="font-size:12px;color:var(--muted);margin:-16px 0 28px;">
-    3 seeds × 4 architectures · 30-Stock $100k · Test Period 2024 · All σ &lt; 0.3 — architectural rankings statistically confirmed
+    3 seeds × 4 architectures · 30-Stock $100k · Test Period 2024 (to peak) · Useful for seed-to-seed variation only; not comparable to full-year buy-and-hold
   </p>
 
   <!-- Verdict cards -->
@@ -1540,26 +1659,26 @@
   <div class="ms-findings-grid">
     <div class="ms-finding-card">
       <div class="ms-finding-num">01</div>
-      <div class="ms-finding-title">Ranking Preserved</div>
+      <div class="ms-finding-title">Ordering Held Across 3 Seeds</div>
       <div class="ms-finding-body">
-        VGG + Alpaca &gt; VGG Baseline &gt; VGG + FinBERT &gt; Transformer holds across all 3 seeds.
-        σ &lt; 0.3 for every architecture confirms the single-seed ranking is statistically valid.
+        The ordering held across these 3 seeds on the peak-truncated window. Three seeds cannot establish a
+        ranking, and the later full-period sweep showed seed spreads of up to 2.0 Sharpe points.
       </div>
     </div>
     <div class="ms-finding-card">
       <div class="ms-finding-num">02</div>
-      <div class="ms-finding-title">FinBERT Drawdown Is Structural</div>
+      <div class="ms-finding-title">FinBERT Drawdown Recurred</div>
       <div class="ms-finding-body">
-        Despite mean Sharpe (1.827) falling below B&H, the ~55% max drawdown reduction vs
-        VGG Baseline is reproduced across all 3 seeds — confirming it is initialization-independent.
+        Mean Sharpe (1.827) fell below its single-seed value. The lower drawdown relative to VGG Baseline
+        recurred across these 3 seeds, measured on the peak-truncated window.
       </div>
     </div>
     <div class="ms-finding-card">
       <div class="ms-finding-num">03</div>
-      <div class="ms-finding-title">Transformer Degeneracy Confirmed</div>
+      <div class="ms-finding-title">Transformer Always-Buy Policy Recurred</div>
       <div class="ms-finding-body">
         The always-buy policy (11:1 buy/sell ratio) and lowest Calmar Ratio (3.39 ± 0.76)
-        are reproduced across all 3 seeds — ruling out a measurement artifact.
+        recurred across all 3 seeds.
       </div>
     </div>
     <div class="ms-finding-card">
@@ -1575,7 +1694,7 @@
 </div><!-- /main -->
 
 <footer>
-  <div>FinRL Deep Reinforcement Learning — Ablation Study · 2025</div>
+  <div>FinRL Deep Reinforcement Learning — Results &amp; Corrections · 2026</div>
   <div>
     <a href="https://github.com/tyhobbs/FinRL_Deep_Reinforcement_Learning">GitHub Repository</a>
     &nbsp;·&nbsp;
