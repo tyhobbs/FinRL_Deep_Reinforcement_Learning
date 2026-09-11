@@ -805,7 +805,8 @@ def run_full_evaluation(
     universe,
     capital,
     initial_capital=1_000_000,
-    has_sentiment=True
+    has_sentiment=True,
+    truncate_to_peak=False
 ):
     """
     Run complete evaluation for one model in a single call.
@@ -829,6 +830,15 @@ def run_full_evaluation(
                         1_000_000 / 100_000 / 10_000
     has_sentiment   : bool — False for VGG_Baseline notebooks,
                         True for all others (default True)
+    truncate_to_peak: bool — default False. Headline test metrics use the
+                        FULL out-of-sample period. If True, test metrics are
+                        computed only up to the portfolio's peak value. That
+                        view ends at the best possible day by construction and
+                        overstates performance; it is a diagnostic, not an
+                        out-of-sample result, and must not be compared with
+                        full-period buy-and-hold. (Versions of this file before
+                        the correction always truncated; the original 24-model
+                        ablation metrics were produced that way.)
 
     Returns
     -------
@@ -865,20 +875,26 @@ def run_full_evaluation(
         model=trained_model, environment=e_test_gym
     )
 
-    # ── Step 2: Truncate test to peak portfolio value ─────────
-    peak_idx        = df_test_account['account_value'].idxmax()
-    peak_date       = df_test_account.loc[peak_idx, 'date']
-    df_test_peak    = df_test_account.loc[
-        :peak_idx
-    ].reset_index(drop=True)
-    df_actions_peak = df_actions.iloc[
-        :peak_idx + 1
-    ].reset_index(drop=True)
-    print(f"Test peak date: {peak_date}")
+    # ── Step 2: Select test window ──────────────────────────
+    # Default: the full out-of-sample test period. Truncating at the
+    # portfolio peak is available only as a labeled diagnostic.
+    peak_idx  = df_test_account['account_value'].idxmax()
+    peak_date = df_test_account.loc[peak_idx, 'date']
+    if truncate_to_peak:
+        df_test_eval    = df_test_account.loc[:peak_idx].reset_index(drop=True)
+        df_actions_eval = df_actions.iloc[:peak_idx + 1].reset_index(drop=True)
+        window_label    = f"to peak — {peak_date} — DIAGNOSTIC ONLY, not out-of-sample"
+        print("WARNING: truncate_to_peak=True — test metrics end at the portfolio "
+              "peak and overstate performance.")
+    else:
+        df_test_eval    = df_test_account.reset_index(drop=True)
+        df_actions_eval = df_actions.reset_index(drop=True)
+        window_label    = "full test period"
+    print(f"Test window: {window_label} (portfolio peak on {peak_date})")
 
     # ── Step 3: Compute summary metrics ──────────────────────
     train_metrics = compute_metrics(df_train_account, initial_capital)
-    test_metrics  = compute_metrics(df_test_peak,     initial_capital)
+    test_metrics  = compute_metrics(df_test_eval,     initial_capital)
 
     print(f"\n{'='*45}")
     print(f"  TRAIN METRICS")
@@ -887,7 +903,7 @@ def run_full_evaluation(
         print(f"  {k:<25} {v:>10}")
 
     print(f"\n{'='*45}")
-    print(f"  TEST METRICS (to peak — {peak_date})")
+    print(f"  TEST METRICS ({window_label})")
     print(f"{'='*45}")
     for k, v in test_metrics.items():
         print(f"  {k:<25} {v:>10}")
@@ -897,7 +913,7 @@ def run_full_evaluation(
         df_train_account, initial_capital
     )
     test_rolling  = compute_rolling_metrics(
-        df_test_peak, initial_capital
+        df_test_eval, initial_capital
     )
 
     # ── Step 5: Overfitting check ─────────────────────────────
@@ -909,7 +925,7 @@ def run_full_evaluation(
 
     # ── Step 6: Degenerate policy check ──────────────────────
     check_degenerate_policy(
-        df_actions_peak, df_test_peak,
+        df_actions_eval, df_test_eval,
         model_name=save_key
     )
 
@@ -937,7 +953,7 @@ def run_full_evaluation(
 
     # ── Step 9: Market regime analysis ───────────────────────
     regime_analysis(
-        df_test_peak, df_bah,
+        df_test_eval, df_bah,
         initial_capital=initial_capital,
         model_name=save_key
     )
@@ -946,16 +962,16 @@ def run_full_evaluation(
     plot_metrics(train_rolling,
                  title_prefix=f'{save_key} — Training')
     plot_metrics(test_rolling,
-                 title_prefix=f'{save_key} — Test (to peak)')
+                 title_prefix=f'{save_key} — Test ({window_label})')
 
     # ── Step 11: Save all pkl files ──────────────────────────
     pkl_files = {
         f'{save_key}_train_rolling':    train_rolling,
         f'{save_key}_test_rolling':     test_rolling,
-        f'{save_key}_account_value':    df_test_peak,
+        f'{save_key}_account_value':    df_test_eval,
         f'{save_key}_train_account':    df_train_account,
         f'{save_key}_bah':              df_bah,
-        f'{save_key}_actions':          df_actions_peak,
+        f'{save_key}_actions':          df_actions_eval,
     }
     for fname, obj in pkl_files.items():
         with open(f'./overlay_data/{fname}.pkl', 'wb') as f:
@@ -968,11 +984,12 @@ def run_full_evaluation(
         f.write(f"MODEL:          {save_key}\n")
         f.write(f"Has sentiment:  {has_sentiment}\n")
         f.write(f"Peak date:      {peak_date}\n")
+        f.write(f"Test window:    {window_label}\n")
         f.write(f"Capital:        ${initial_capital:,.0f}\n\n")
         f.write("TRAIN METRICS\n" + "-" * 35 + "\n")
         for k, v in train_metrics.items():
             f.write(f"  {k}: {v}\n")
-        f.write(f"\nTEST METRICS (to peak — {peak_date})\n")
+        f.write(f"\nTEST METRICS ({window_label})\n")
         f.write("-" * 35 + "\n")
         for k, v in test_metrics.items():
             f.write(f"  {k}: {v}\n")
@@ -992,11 +1009,12 @@ def run_full_evaluation(
         'bah_metrics':       bah_metrics,
         'train_rolling':     train_rolling,
         'test_rolling':      test_rolling,
-        'df_test_account':   df_test_peak,
+        'df_test_account':   df_test_eval,
         'df_train_account':  df_train_account,
         'df_bah':            df_bah,
-        'df_actions':        df_actions_peak,
+        'df_actions':        df_actions_eval,
         'peak_date':         peak_date,
+        'test_window':       window_label,
     }
 
 def run_full_evaluation_transformer(
@@ -1008,6 +1026,7 @@ def run_full_evaluation_transformer(
     universe,
     capital,
     initial_capital=1_000_000,
+    truncate_to_peak=False,
 ):
     os.makedirs('./overlay_data/', exist_ok=True)
     save_key = f"{universe}_{capital}_{model_name}"
@@ -1017,20 +1036,26 @@ def run_full_evaluation_transformer(
     print(f"  Capital: ${initial_capital:,.0f}")
     print(f"{'='*60}\n")
 
-    # ── Step 1: Truncate test to peak ─────────────────────────
-    peak_idx        = df_test_account['account_value'].idxmax()
-    peak_date       = df_test_account.loc[peak_idx, 'date']
-    df_test_peak    = df_test_account.loc[
-        :peak_idx
-    ].reset_index(drop=True)
-    df_actions_peak = df_actions.iloc[
-        :peak_idx + 1
-    ].reset_index(drop=True)
-    print(f"Test peak date: {peak_date}")
+    # ── Step 1: Select test window ──────────────────────────
+    # Default: the full out-of-sample test period. Truncating at the
+    # portfolio peak is available only as a labeled diagnostic.
+    peak_idx  = df_test_account['account_value'].idxmax()
+    peak_date = df_test_account.loc[peak_idx, 'date']
+    if truncate_to_peak:
+        df_test_eval    = df_test_account.loc[:peak_idx].reset_index(drop=True)
+        df_actions_eval = df_actions.iloc[:peak_idx + 1].reset_index(drop=True)
+        window_label    = f"to peak — {peak_date} — DIAGNOSTIC ONLY, not out-of-sample"
+        print("WARNING: truncate_to_peak=True — test metrics end at the portfolio "
+              "peak and overstate performance.")
+    else:
+        df_test_eval    = df_test_account.reset_index(drop=True)
+        df_actions_eval = df_actions.reset_index(drop=True)
+        window_label    = "full test period"
+    print(f"Test window: {window_label} (portfolio peak on {peak_date})")
 
     # ── Step 2: Metrics ───────────────────────────────────────
     train_metrics = compute_metrics(df_train_account, initial_capital)
-    test_metrics  = compute_metrics(df_test_peak,     initial_capital)
+    test_metrics  = compute_metrics(df_test_eval,     initial_capital)
 
     print(f"\n{'='*45}")
     print(f"  TRAIN METRICS")
@@ -1039,7 +1064,7 @@ def run_full_evaluation_transformer(
         print(f"  {k:<25} {v:>10}")
 
     print(f"\n{'='*45}")
-    print(f"  TEST METRICS (to peak — {peak_date})")
+    print(f"  TEST METRICS ({window_label})")
     print(f"{'='*45}")
     for k, v in test_metrics.items():
         print(f"  {k:<25} {v:>10}")
@@ -1049,7 +1074,7 @@ def run_full_evaluation_transformer(
         df_train_account, initial_capital
     )
     test_rolling  = compute_rolling_metrics(
-        df_test_peak, initial_capital
+        df_test_eval, initial_capital
     )
 
     # ── Step 4: Validation checks ─────────────────────────────
@@ -1059,7 +1084,7 @@ def run_full_evaluation_transformer(
         model_name=save_key
     )
     check_degenerate_policy(
-        df_actions_peak, df_test_peak,
+        df_actions_eval, df_test_eval,
         model_name=save_key
     )
 
@@ -1075,7 +1100,7 @@ def run_full_evaluation_transformer(
 
     # ── Step 6: Regime analysis ───────────────────────────────
     regime_analysis(
-        df_test_peak, df_bah,
+        df_test_eval, df_bah,
         initial_capital=initial_capital,
         model_name=save_key
     )
@@ -1084,16 +1109,16 @@ def run_full_evaluation_transformer(
     plot_metrics(train_rolling,
                  title_prefix=f'{save_key} — Training')
     plot_metrics(test_rolling,
-                 title_prefix=f'{save_key} — Test (to peak)')
+                 title_prefix=f'{save_key} — Test ({window_label})')
 
     # ── Step 8: Save pkl files ────────────────────────────────
     pkl_files = {
         f'{save_key}_train_rolling':  train_rolling,
         f'{save_key}_test_rolling':   test_rolling,
-        f'{save_key}_account_value':  df_test_peak,
+        f'{save_key}_account_value':  df_test_eval,
         f'{save_key}_train_account':  df_train_account,
         f'{save_key}_bah':            df_bah,
-        f'{save_key}_actions':        df_actions_peak,
+        f'{save_key}_actions':        df_actions_eval,
     }
     for fname, obj in pkl_files.items():
         with open(f'./overlay_data/{fname}.pkl', 'wb') as f:
@@ -1105,11 +1130,12 @@ def run_full_evaluation_transformer(
     with open(summary_path, 'w') as f:
         f.write(f"MODEL:         {save_key}\n")
         f.write(f"Peak date:     {peak_date}\n")
+        f.write(f"Test window:   {window_label}\n")
         f.write(f"Capital:       ${initial_capital:,.0f}\n\n")
         f.write("TRAIN METRICS\n" + "-"*35 + "\n")
         for k, v in train_metrics.items():
             f.write(f"  {k}: {v}\n")
-        f.write(f"\nTEST METRICS (to peak)\n" + "-"*35 + "\n")
+        f.write(f"\nTEST METRICS ({window_label})\n" + "-"*35 + "\n")
         for k, v in test_metrics.items():
             f.write(f"  {k}: {v}\n")
         f.write("\nBUY-AND-HOLD METRICS\n" + "-"*35 + "\n")
@@ -1128,9 +1154,10 @@ def run_full_evaluation_transformer(
         'bah_metrics':      bah_metrics,
         'train_rolling':    train_rolling,
         'test_rolling':     test_rolling,
-        'df_test_account':  df_test_peak,
+        'df_test_account':  df_test_eval,
         'df_train_account': df_train_account,
         'df_bah':           df_bah,
-        'df_actions':       df_actions_peak,
+        'df_actions':       df_actions_eval,
         'peak_date':        peak_date,
+        'test_window':      window_label,
     }
